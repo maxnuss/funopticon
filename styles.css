@@ -12,7 +12,8 @@ body {
 	width: 800px;
 	padding: 20px;
 	margin: 30px auto;
-	background: #f8f3f3;
+	background: url('img/pattern-4.png');
+	background-size: 40px;
 	border-bottom: 10px solid black;
 	border-image: url('img/rainbow-border.gif') 50 round;
 }
@@ -27,4 +28,49 @@ body {
 	display: block;
 	margin: 20px auto 0;
 	width: 400px;
+}
+
+.tagline {
+	width: 600px;
+	margin: 20px auto;
+	display: block;
+	border: 1px solid #afafaf;
+}
+
+.nav {
+	margin: 20px auto;
+	text-align: center;
+}
+
+.button {
+	width: 100px;
+	height: 32px;
+	background-position: center top;
+	background-size: 100%;
+	text-indent: -9000px;
+	display: inline-block;
+	margin: 0 5px;
+}
+
+.button:hover {
+	background-position: center bottom;
+}
+
+.button a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.button-about {
+	background-image: url('img/button-about.png');
+}
+
+.button-location {
+	background-image: url('img/button-location.png');
+	width: 159px;
+}
+
+.button-tickets {
+	background-image: url('img/button-tickets.png');
 }
