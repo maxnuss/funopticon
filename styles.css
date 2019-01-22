@@ -1,0 +1,30 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-image: url('img/pattern-2.jpg');
+}
+
+.main {
+	width: 800px;
+	padding: 20px;
+	margin: 30px auto;
+	background: #f8f3f3;
+	border-bottom: 10px solid black;
+	border-image: url('img/rainbow-border.gif') 50 round;
+}
+
+.logo {
+	display: block;
+	width: 180px;
+	margin: 0 auto;
+}
+
+.logotype {
+	display: block;
+	margin: 20px auto 0;
+	width: 400px;
+}
