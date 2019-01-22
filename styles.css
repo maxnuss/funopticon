@@ -6,6 +6,12 @@ body {
 
 body {
 	background-image: url('img/pattern-2.jpg');
+	font-size: 1.2em;
+	line-height: 1.4;
+}
+
+h1, h2, h3 {
+	text-align: center;
 }
 
 .main {
@@ -74,6 +80,33 @@ body {
 
 .button-tickets {
 	background-image: url('img/button-tickets.png');
+}
+
+.button-faq {
+	background-image: url('img/button-faq.png');
+}
+
+.container {
+	margin: 0 auto;
+	width: 600px;
+}
+
+.globe {
+	display: block;
+	margin: 20px auto;
+	width: 150px;
+}
+
+.bus {
+	width: 150px;
+	margin-right: 10px;
+	margin-top: 15px;
+}
+
+.tickets {
+	display: block;
+	margin: 0 auto;
+	width: 150px;
 }
 
 .under-construction {
