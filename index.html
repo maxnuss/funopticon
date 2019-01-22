@@ -5,6 +5,23 @@
 		<title>Funopticon</title>
 		<link rel="stylesheet" href="styles.css">
 		<link rel="icon" href="favicon.png" />
+		
+		<!--marquee-->
+		<script type="text/javascript">
+			var tWidth='400px';                  // width (in pixels)
+			var tHeight='50px';                  // height (in pixels)
+			var tcolour='transparent';               // background colour:
+			var moStop=false;                     // pause on mouseover (true or false)
+			var fontfamily = 'Times New Roman,serif'; // font for content
+			var tSpeed=5;                        // scroll speed (1 = slow, 5 = fast)
+
+			// enter your ticker content here (use \/ and \' in place of / and ' respectively)
+			var content='Frequently Asked Questions';
+
+			var cps=-tSpeed; var aw, mq; var fsz = parseInt(tHeight) - 4; function startticker(){if (document.getElementById) {var tick = '<div style="margin:0 auto;position:relative;width:'+tWidth+';height:'+tHeight+';overflow:hidden;background-color:'+tcolour+'"'; if (moStop) tick += ' onmouseover="cps=0" onmouseout="cps=-tSpeed"'; tick +='><div id="mq" style="position:absolute;right:0px;top:0px;font-family:'+fontfamily+';font-size:28px;font-weight:bold;white-space:nowrap;"><\/div><\/div>'; document.getElementById('ticker').innerHTML = tick; mq = document.getElementById("mq"); mq.style.right=(10+parseInt(tWidth))+"px"; mq.innerHTML='<span id="tx">'+content+'<\/span>'; aw = document.getElementById("tx").offsetWidth; lefttime=setInterval("scrollticker()",50);}} function scrollticker(){mq.style.right = (parseInt(mq.style.right)>(-10 - aw)) ?
+			mq.style.right = parseInt(mq.style.right)+cps+"px": parseInt(tWidth)+10+"px";} window.onload=startticker;
+		</script>
+
 	</head>
 	<body>
 		<div class="frame">
@@ -14,7 +31,8 @@
 			<img src="img/tagline2.png" alt="Make your best memories of the year" class="tagline">
 			<div class="nav">
 				<div class="button button-about"><a href="#about">About</a></div>
-				<div class="button button-location"><a href="#location">Location & Dates</a></div>
+				<div class="button button-location"><a href="#location">Location & Date</a></div>
+				<div class="button button-values"><a href="#values">Core Values</a></div>
 				<div class="button button-tickets"><a href="#tickets">Tickets</a></div>
 				<div class="button button-faq"><a href="#faq">Tickets</a></div>
 			</div><!--nav-->
@@ -39,6 +57,12 @@
 					</tr>
 				</table>
 			</div><!--container-->
+
+			<div class="container">
+				<a name="values"></a>
+				<h2>Core Values</h2>
+				
+			</div><!--container-->
 			
 			<hr>
 			
@@ -61,6 +85,20 @@
 				<p align="center">
 					<a href="#"><img src="img/click-here.gif" alt="CLICK HERE"></a>
 				</p>
+			</div><!--container-->
+			
+			<hr>
+			
+			<a name="faq"></a>
+			<div class="container">
+				<img src="img/brain.gif" class="brain">
+				<div id="ticker">FAQ</div>
+				
+				<p><b>Can I bring a friend/my significant other/my parents?</b></p>
+				<p>We expect that most attendees will be able to bring at least one guest, but we won&rsquo;t know for sure until first wave ticket sales close at the end of February.</p>
+				
+				<p><b>Are you guys making money on this?</b></p>
+				<p>No, we&rsquo;re running Funopticon at cost. We might even lose money!</p>
 			</div><!--container-->
 			
 			<hr>

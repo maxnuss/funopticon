@@ -73,6 +73,11 @@ h1, h2, h3 {
 	background-image: url('img/button-about.png');
 }
 
+.button-values {
+	background-image: url('img/button-values.png');
+	width: 130px;
+}
+
 .button-location {
 	background-image: url('img/button-location.png');
 	width: 159px;
@@ -107,6 +112,12 @@ h1, h2, h3 {
 	display: block;
 	margin: 0 auto;
 	width: 150px;
+}
+
+.brain {
+	display: block;
+	margin: 20px auto;
+	width: 200px;
 }
 
 .under-construction {
