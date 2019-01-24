@@ -149,6 +149,31 @@ h1, h2, h3 {
 	display: block;
 }
 
+.values {
+	text-align: center;
+	display: block;
+	margin: 0 auto;
+	width: 600px;
+}
+
+.values td {
+	width: 300px;
+	padding-right: 25px;
+	padding-left: 25px;
+}
+
+.values-title {
+	font-weight: bold;
+	font-size: 110%;
+}
+
+.values img {
+	width: 50px;
+	display: block;
+	margin: 0 auto 20px;
+}
+
+
 /* Windows 95 scrollbars */
 *, *::after, *::before {
   box-sizing: border-box;
