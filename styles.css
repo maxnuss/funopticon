@@ -149,15 +149,19 @@ h1, h2, h3 {
 	display: block;
 }
 
+.container-values {
+	width: 700px;
+}
+
 .values {
 	text-align: center;
 	display: block;
 	margin: 0 auto;
-	width: 600px;
+	width: 700px;
 }
 
 .values td {
-	width: 300px;
+	width: 350px;
 	padding-right: 25px;
 	padding-left: 25px;
 }
@@ -171,6 +175,16 @@ h1, h2, h3 {
 	height: 50px;
 	display: block;
 	margin: 0 auto 20px;
+}
+
+img.values-friends {
+	position: relative;
+	top: 10px;
+}
+
+img.values-heart {
+	position: relative;
+	top: 5px;
 }
 
 
