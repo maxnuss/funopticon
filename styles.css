@@ -150,18 +150,18 @@ h1, h2, h3 {
 }
 
 .container-values {
-	width: 700px;
+	width: 740px;
 }
 
 .values {
 	text-align: center;
 	display: block;
 	margin: 0 auto;
-	width: 700px;
+	width: 720px;
 }
 
 .values td {
-	width: 350px;
+	width: 360px;
 	padding-right: 25px;
 	padding-left: 25px;
 }
