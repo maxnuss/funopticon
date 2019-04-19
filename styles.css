@@ -187,6 +187,10 @@ img.values-heart {
 	top: 5px;
 }
 
+.peacenik {
+	color: grey;
+}
+
 
 /* Windows 95 scrollbars */
 *, *::after, *::before {
