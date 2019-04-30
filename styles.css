@@ -187,6 +187,11 @@ img.values-heart {
 	top: 5px;
 }
 
+.organizers {
+	display: block;
+	margin: 0 auto;
+}
+
 .peacenik {
 	color: grey;
 }
