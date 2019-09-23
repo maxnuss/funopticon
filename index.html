@@ -1,184 +1,24 @@
-<!DOCTYPE html>
+<!doctype html>
+
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Funopticon</title>
-		<link rel="stylesheet" href="styles.css">
-		<link rel="icon" href="favicon.png" />
-		
-		<!--marquee-->
-		<script type="text/javascript">
-			var tWidth='400px';                  // width (in pixels)
-			var tHeight='50px';                  // height (in pixels)
-			var tcolour='transparent';               // background colour:
-			var moStop=false;                     // pause on mouseover (true or false)
-			var fontfamily = 'Times New Roman,serif'; // font for content
-			var tSpeed=5;                        // scroll speed (1 = slow, 5 = fast)
+<head>
+  <meta charset="utf-8">
 
-			// enter your ticker content here (use \/ and \' in place of / and ' respectively)
-			var content='Frequently Asked Questions';
+  <title>Funopticon</title>
 
-			var cps=-tSpeed; var aw, mq; var fsz = parseInt(tHeight) - 4; function startticker(){if (document.getElementById) {var tick = '<div style="margin:0 auto;position:relative;width:'+tWidth+';height:'+tHeight+';overflow:hidden;background-color:'+tcolour+'"'; if (moStop) tick += ' onmouseover="cps=0" onmouseout="cps=-tSpeed"'; tick +='><div id="mq" style="position:absolute;right:0px;top:0px;font-family:'+fontfamily+';font-size:28px;font-weight:bold;white-space:nowrap;"><\/div><\/div>'; document.getElementById('ticker').innerHTML = tick; mq = document.getElementById("mq"); mq.style.right=(10+parseInt(tWidth))+"px"; mq.innerHTML='<span id="tx">'+content+'<\/span>'; aw = document.getElementById("tx").offsetWidth; lefttime=setInterval("scrollticker()",50);}} function scrollticker(){mq.style.right = (parseInt(mq.style.right)>(-10 - aw)) ?
-			mq.style.right = parseInt(mq.style.right)+cps+"px": parseInt(tWidth)+10+"px";} window.onload=startticker;
-		</script>
+  <link rel="stylesheet" href="styles.css">
+  
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap" rel="stylesheet">
 
-	</head>
-	<body>
-		<div class="frame">
-		<div class="main">
-			<img src="img/logo-animated.gif" alt="Funopticon logo" class="logo">
-			<img src="img/logotype.png" alt="Funopticon" class="logotype">
-			<img src="img/tagline2.png" alt="Make your best memories of the year" class="tagline">
-			<div class="nav">
-				<div class="button button-about"><a href="#about">About</a></div>
-				<div class="button button-location"><a href="#location">Location & Date</a></div>
-				<div class="button button-values"><a href="#values">Core Values</a></div>
-				<div class="button button-tickets"><a href="#tickets">Tickets</a></div>
-				<div class="button button-faq"><a href="#faq">FAQ</a></div>
-			</div><!--nav-->
-	
-			<hr>
-			
-			<div class="container">
-				<a name="about"></a>
-				<img src="img/welcome.gif" class="welcome">
-				<h2>About</h2>
-				<p class="big">Funopticon is a weekend of fun & games, bonding, debauchery, and fast cars*. Think of it as being somewhere in between summer camp for adults and a music festival minus the music.</p>
-				
-				<p class="small">*No fast cars.</p>
-			</div><!--container-->
-		
-			<hr>
-			
-			<div class="container">
-				<a name="location"></a>
-				<img src="img/globe.gif" class="globe">
-				<h2>Location & Date</h2>
-				
-				<p>Funopticon will be held from September 6&ndash;8, 2019, at <a href="https://campecholake.com">Camp Echo Lake</a> in Warrensburg, NY.</p>
-				
-				<table>
-					<tr>
-						<td>
-							<img src="img/bus.png" class="bus">
-						</td>
-						<td>
-							If you live far away, your best best is to fly into NYC and rent a car + carpool with other attendees. Albany is closer to the venue and may eliminate the need to rent a car (details below), but is more expensive.
-						</td>
-					</tr>
-				</table>
-				
-				<p>If you live close enough to drive/bus/train (ex. DC, Philly, Boston), we recommend either driving directly or taking the bus/train to Albany.</p>
 
-				<p>If your flight/bus/train takes you to Albany, you can take a shuttle directly to the venue for about $25. You can indicate your (non-binding) interest during registration. Alternatively, you can rent a car in Albany.</p>
+</head>
 
-				<p>Finally, we strongly recommend during registration that you opt to be connected to your fellow attendees in your city so you can coordinate on transportation. Coordinating should be especially useful for attendees flying in to rent a car and drive up together.</p>
+<body>
 
-			</div><!--container-->
-						
-			<hr>
-	
-			<div class="container container-values">
-				<a name="values"></a>
-				<h2>Our Core Values</h2>
-				<table class="values">
-					<tr>
-						<td>
-							<img src="img/values-spectacle.png">
-							<p><span class="values-title">Construct the Spectacle</span><br>
-							Build something great together.</p>
-						</td>
-						<td>
-							<img src="img/values-myths.png">
-							<p><span class="values-title">Make Myths</span><br>
-							Turn events into legends.</p>
-						</td>
-					</tr>
-					<tr>
-						<td>
-							<img src="img/values-heart.png" class="values-heart">
-							<p><span class="values-title">Request Enthusiasm</span><br>
-							Respect boundaries and be explicit about consent.</p>
-						</td>
-						<td>
-							<img src="img/values-friends.png" class="values-friends">
-							<p><span class="values-title">Be the Friend You Want to Make</span><br>
-							Invite others to join you, and join when invited by others.</p>
-						</td>
-					</tr>
-				</table>
-			</div>
-		
-			<hr>
-		
-			<div class="container">
-				<a name="tickets"></a>
-				
-				<img src="img/tickets.gif" class="tickets">
-				<h2>Tickets</h2>
-				
-				<p align="center">Sorry, Funopticon is sold out!</p>
-				
-				<!-- ><p>To make Funopticon as accessible as possible, we are pricing tickets on a sliding scale:</p>
-				<ul>
-					<li><b>Job Creators ($250):</b> Cover your costs + a $50 contribution to help others attend Funopticon.</li>
-					<li><b>Patriots ($200):</b> Cover your costs.
-					<li><span class="peacenik"><strike><b>Peaceniks ($100):</b> Discount ticket if a full-price ticket is too much for you.</strike> SOLD OUT</span></li>
-				</ul>
-				
-				<p>There are a limited number of $100 tickets available, so please only take one if you really need it (honor system here).</p>
-								
-				<p align="center"><b>Get your tickets here:</b></p>
-				<p align="center">
-					<a href="https://docs.google.com/forms/d/e/1FAIpQLSfPqc1kmEFYAOvphJ5X9XM7LSNs74wc05MF7rPB-TI5in0hGQ/viewform"><img src="img/click-here.gif" alt="CLICK HERE"></a>
-				</p> -->
-			</div><!--container-->
-			
-			<hr>
-			
-			<div class="container">
-				<a name="organizers"></a>
-				
-				<h2>About the Organizers</h2>
-
-				<img src="img/organizers.gif" class="organizers">
-				
-				<p>Max and Tim met as fellows in the inaugural class of Venture for America, where their questionable futures and general unemployability inspired Andrew Yang to run for President on a platform of universal basic income. They later honed their culture-building skills as startup founders and part-time cult leaders. Collectively, they have inspired hundreds of people to make regrettable life decisions.</p>
-			</div><!--container-->
-			
-			<hr
-			<a name="faq"></a>
-			<div class="container">
-				<img src="img/brain.gif" class="brain">
-				<div id="ticker">FAQ</div>
-				<p><b>What&rsquo;s included in my ticket?</b></p>
-				<p>Your ticket includes lodging and meals for the weekend, alcohol (though we recommend bringing your own to supplement), and some secret Funopticon surprises.</p>
-
-				<p><b>Can I bring a friend/my significant other/my parents?</b></p>
-				<p>Yes, you can invite your friends! When you <a href="https://docs.google.com/forms/d/e/1FAIpQLSfPqc1kmEFYAOvphJ5X9XM7LSNs74wc05MF7rPB-TI5in0hGQ/viewform">get your ticket</a>, we&rsquo;ll ask you for the names and email addresses of anyone else you want to invite.</p>
-				<p>We&rsquo;re aiming to build a short-term community of people who are fun, weird, adventurous, and eager to contribute to making the weekend an awesome experience for everyone involved, so if you&rsquo;re going to invite a friend, make sure they&rsquo;re someone who shares those values.</p>
-				
-				<p><b>Are you guys making money on this?</b></p>
-				<p>No, we&rsquo;re running Funopticon at cost. We might even lose money!</p>
-				
-				<p><b>Why is it called Funopticon?</b></p>
-				<p><a href="https://en.wikipedia.org/wiki/Panopticon">The Panopticon</a> is a type of institutional building and a system of control designed by the English philosopher and social theorist Jeremy Bentham in the late 18th century. This is like that, but fun.</p>
-	
-			</div><!--container-->
-			
-			<hr>
-			
-			<img src="img/under-construction.gif" class="under-construction">
-			
-			<div class="hit-counter">
-				You are visitor number...<br>
-				<!-- Start of WebFreeCounter Code -->
-				<a href="https://www.webfreecounter.com/" target="_blank"><img src="https://www.webfreecounter.com/hit.php?id=zefppc&nd=6&style=52" border="0" alt="visitor counter"></a>
-				<!-- End of WebFreeCounter Code -->
-			</div><!--counter-->
-			
-			<a href="https://www.youtube.com/watch?v=3Z3ZAIIgAaA"><img src="img/ie.gif" class="ie"></a>
-		</div><!--main-->
-		</div>
-	</body>
+    <div class="preview">
+        <img src="img/logo-white.png">
+        8/13/2020 &ndash; 8/16/2020
+    </div>
+    
+</body>
 </html>
