@@ -3,6 +3,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Funopticon II: This Time It&rsquo;s Personal</title>
 
@@ -33,8 +34,10 @@ $( document ).ready(function() {
     subtitles[11] = "Funopticon II: The Slip 'n' Slide Strikes Back";
     subtitles[12] = "Funopticon II: Tie Dye Another Day";
     subtitles[13] = "Funopticon II: Beyond Keldin-dome";
-    subtitles[14] = "Funopitcon II: The Lost (Concern for the Outside) World";
+    subtitles[14] = "Funopticon II: The Lost (Concern for the Outside) World";
     subtitles[15] = "Funopticon II: The Girl with the Dragon Tattoo from Funopticon I";
+    subtitles[16] = "Detective Funopticon";
+    subtitles[15] = "50 First Funopticons";
 
     var myRandom = Math.floor(Math.random()*subtitles.length);
 
@@ -57,8 +60,96 @@ $( document ).ready(function() {
         <img src="img/logo.png" alt="Funopticon II" class="logo">
         <div class="subtitles"></div>
         
-        <img src="img/memories.png" class="memories" alt="Make your best memories of the year">
+        <img src="img/memories-oneline.png" class="memories" alt="Make your best memories of the year">
+
+        <img src="img/memories.png" class="memories memories-mobile" alt="Make your best memories of the year">
         
+        <div class="nav">
+            <a href="#about" class="about-link">About<a/>
+            <a href="#location" class="location-link">Location & Date</a>
+            <a href="#values" class="values-link">Core Values</a>
+            <a href="#tickets" class="tickets-link">Tickets</a>
+            <a href="#faq" class="faq-link">FAQ</a>
+        </div><!--nav-->
+        
+        <div class="border"></div>
+        
+        <a name="about"></a>
+        <div class="section">
+            <h2 class="section-title">About</h2>
+            <p>Funopticon is a three-day weekend of fun & games, bonding, debauchery, and World War II documentaries*. Think of it as being somewhere in between summer camp for adults and a music festival minus the music.</p>
+            <p>95% of last year&rsquo;s attendees said Funopticon was one of their top five experiences of the year.</p>
+            <img src="img/chart.jpg" class="chart">
+            <p class="small">*World War II documentaries sold separately.</p>
+        </div><!--section-->
+
+        <div class="border red"></div>
+
+        <a name="location"></a>
+        <div class="section">
+            <h2 class="section-title">Location & Date</h2>
+            <p>Lorem Ipsum.</p>
+        </div><!--section-->
+
+        <div class="border blue"></div>
+
+        <a name="values"></a>
+        <div class="section values-section">
+            <h2 class="section-title">Our Core Values</h2>
+            <div class="values">
+                <div class="value">
+                    <h3>Construct the Spectacle</h3>
+                    <p>Build something great together.</p>
+                </div><!--value-->
+                <div class="value">
+                    <h3>Make Myths</h3>
+                    <p>Turn events into legends.</p>
+                </div><!--value-->
+                <div class="value">
+                    <h3>Request Enthusiasm</h3>
+                    <p>Respect boundaries and be explicit about consent.</p>
+                </div><!--value-->
+                <div class="value">
+                    <h3>Be the Friend You Want to Make</h3>
+                    <p>Imagine the most fun person you could meet and act like that person.</p>
+                </div><!--value-->
+            </div><!--values-->
+        </div><!--section-->
+
+        <div class="border plum"></div>
+
+        <a name="tickets"></a>
+        <div class="section">
+            <h2 class="section-title">Tickets</h2>
+            <p>Tickets to Funopticon are $250, with the option to pay in five  installments of $50 each. Your ticket includes lodging, meals, some alcohol, and some secret Funopticon surprises.</p>
+            <a href="#">Buy Tickets</a>
+            <p class="small">If financial hardship is going to prevent you from coming to Funopticon, please <a href="mailto:hello@funopticon.life">contact us</a>.</p>
+        </div><!--section-->
+
+        <div class="border yellow"></div>
+
+        <a name="about"></a>
+        <div class="section">
+            <h2 class="section-title">About the Organizers</h2>
+            <img src="img/max-and-tim.jpg" alt="Max and Tim" class="max-and-tim">
+            <p>Max and Tim (pictured above) met as fellows in the inaugural class of Venture for America, where their questionable futures and general unemployability inspired Andrew Yang to run for President on a platform of universal basic income. They later honed their culture-building skills as startup founders and part-time cult leaders. Collectively, they have inspired hundreds of people to make regrettable life decisions.</p>
+        </div><!--section-->
+  
+        <div class="border blue-green"></div>
+
+        <a name="faq"></a>
+        <div class="section">
+            <h2 class="section-title">FAQ</h2>
+            <p class="question">Can I invite my friends/lovers/enemies?</p>
+            <p>We will eventually open ticket sales to the general public, but for the first month, tickets are reserved exclusively for people who attended last year&rsquo;s Funopticon.</p>
+            <p class="question">Can I get a cheaper ticket if I can only come for two days?</p>
+            <p>No. Since most of our costs are fixed, two-day tickets would have only been $25 cheaper, so we decided the extra logistics created by  two ticket classes weren&rsquo;t worth it. If you can only make it for two days, consider the extra $25 a donation to the Funopticon general fund&mdash;or an option on coming for all three days at the last minute.</p>
+            <p class="question">Are you guys making money on this?</p>
+            <p>No, we&rsquo;re running Funopticon at cost... assuming we get the math right. Last year we actually lost money.</p>
+            <p class="question">Why is it called Funopticon?</p>
+            <p><a href="https://en.wikipedia.org/wiki/Panopticon">The Panopticon</a> is a type of institutional building and a system of control designed by the English philosopher and social theorist Jeremy Bentham in the late 18th century. This is like that, but fun.</p>
+        </div><!--section-->
+
     </div><!--main-->
 
 </body>
