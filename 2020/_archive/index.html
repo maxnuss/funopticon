@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>Funopticon</title>
+		<link rel="stylesheet" href="styles.css">
+		<link rel="icon" href="favicon.png" />
+		
+		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono&display=swap" rel="stylesheet">
+		
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		
+		<script type="text/javascript">
+            $(document).ready(function(){
+
+                //Plays the file when the mouse is over the element
+                $(".nav-sub a").mouseover (function (){
+
+                    $("#coin-sound")[0].play();
+
+                });
+
+            });
+        </script>
+				
+	</head>
+	<body>
+		<div class="frame">
+		<div class="main">
+	        <img src="img/logotype.png" alt="Funopticon" class="logotype">
+	       
+	        <img src="img/tagline-animated.gif" class="tagline">
+
+	        <div id="nav">
+	            <div style="display: none;">
+                    <audio id="coin-sound" controls autoload>
+                        <source src="beep.wav" type="audio/mpeg">
+                    </audio>
+                </div>
+
+                <div class="nav-sub nav-about"><a href="#about">About</a></div>
+                <div class="nav-sub nav-location"><a href="#location">Location & Date</a></div>
+                <div class="nav-sub nav-values"><a href="#values">Core Values</a></div>
+                <div class="nav-sub nav-tickets"><a href="#tickets">Tickets</a></div>
+                <div class="nav-sub nav-faq"><a href="#faq">FAQ</a></div>
+            </div><!--nav-->
+            
+	        <div class="hr"></div>
+	        
+	        <div class="section">
+	            <a name="about"></a>
+	            <img src="img/about-sign.png" class="header-image">
+	            <img src="img/about.png" alt="about" class="header">
+	            <p>Funopticon is a weekend of fun & games, bonding, debauchery, grammar lessons, highbrow philosophy, antitrust debates, and lawnmowing*. Think of it as being somewhere in between summer camp for adults and a music festival minus the music.</p>
+	            <p class="small">* Must provide your own lawnmower.<p/>
+	        </div><!--section-->
+    	
+    		<div class="hr"></div>
+
+	        <div class="section">
+	            <a name="location"></a>
+	            <img src="img/location-image.png" class="header-image location-header">
+	            <img src="img/location.png" alt="location & date" class="header">
+	            <p>Funopticon will be held from August 13&ndash;16, 2020, at <a href="https://www.bhecamp.org/">Camp Berkshire Hills Eisenberg</a> in Copake, NY.<p/>
+	        </div><!--section-->
+    	
+    	</div><!--main-->
+    	
+		</div><!--frame-->
+	</body>
+</html>

@@ -1,0 +1,65 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    <title>Funopticon II: This Time It&rsquo;s Personal</title>
+
+    <link rel="stylesheet" href="styles.css">
+ 
+    <link rel="icon" href="../favicon.png" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Overpass:400,400i,700,700i&display=swap" rel="stylesheet">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+</head>
+
+<script type="text/javascript">
+$( document ).ready(function() {
+    var subtitles = new Array();
+    subtitles[0] = "Funopticon II: This Time It&rsquo;s Personal";
+    subtitles[1] = "Funopticon II: Electric Boogaloo";
+    subtitles[2] = "Funopticon and the Chamber of Secrets";
+    subtitles[3] = "Funopticon 2: Funopticon Reloaded";
+    subtitles[4] = "Funopticon 2: 2 Fast 2 Funopticon";
+    subtitles[5] = "The Man With the Golden Funopticon";
+    subtitles[6] = "Funopticon Strikes Back";
+    subtitles[7] = "Funopticon: Ragnarok";
+    subtitles[8] = "How to Train Your Funopticon";
+    subtitles[9] = "The Funopticon Ultimatum";
+    subtitles[10] = "Funopticon II and Tyler Too";
+    subtitles[11] = "Funopticon II: The Slip 'n' Slide Strikes Back";
+    subtitles[12] = "Funopticon II: Tie Dye Another Day";
+    subtitles[13] = "Funopticon II: Beyond Keldin-dome";
+    subtitles[14] = "Funopitcon II: The Lost (Concern for the Outside) World";
+    subtitles[15] = "Funopticon II: The Girl with the Dragon Tattoo from Funopticon I";
+
+    var myRandom = Math.floor(Math.random()*subtitles.length);
+
+    $('.subtitles').html(subtitles[myRandom]);
+});
+
+</script>
+
+<body>
+
+    <div id="main">
+        <div class="new">
+            <img src="img/new.png" alt="New!">
+        </div><!--new-->
+    
+        <div class="omg">
+            <img src="img/omg.png" alt="OMG">
+        </div><!--new-->
+
+        <img src="img/logo.png" alt="Funopticon II" class="logo">
+        <div class="subtitles"></div>
+        
+        <img src="img/memories.png" class="memories" alt="Make your best memories of the year">
+        
+    </div><!--main-->
+
+</body>
+</html>
