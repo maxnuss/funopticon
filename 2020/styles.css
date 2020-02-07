@@ -129,6 +129,22 @@ a:hover:after {
     }
 }
 
+.refresh {
+    width: 150px;
+    height: 70px;
+    background-image: url('img/refresh.png');
+    background-size: 100% 100%;
+    position: fixed;
+    top: 350px;
+    right: 80px;
+}
+
+@media (max-width: 1100px) {
+    .refresh {
+        display: none;
+    }
+}
+
 .nav {
     text-align: center;
     font-size: 1.2rem;
