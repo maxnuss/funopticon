@@ -23,7 +23,7 @@ $( document ).ready(function() {
     subtitles[0] = "Funopticon II: This Time It&rsquo;s Personal";
     subtitles[1] = "Funopticon II: Electric Boogaloo";
     subtitles[2] = "Funopticon and the Chamber of Secrets";
-    subtitles[3] = "Funopticon 2: Funopticon Reloaded";
+    subtitles[3] = "Funopticon Reloaded";
     subtitles[4] = "Funopticon 2: 2 Fast 2 Funopticon";
     subtitles[5] = "The Man With the Golden Funopticon";
     subtitles[6] = "Funopticon Strikes Back";
@@ -36,8 +36,29 @@ $( document ).ready(function() {
     subtitles[13] = "Funopticon II: Beyond Keldin-dome";
     subtitles[14] = "Funopticon II: The Lost (Concern for the Outside) World";
     subtitles[15] = "Funopticon II: The Girl with the Dragon Tattoo from Funopticon I";
-    subtitles[16] = "Detective Funopticon";
     subtitles[15] = "50 First Funopticons";
+    subtitles[16] = "A Series of Unfortunate Funopticons";
+    subtitles[17] = "Funoption II: Funopticon After Hours";
+    subtitles[18] = "Funopticon II: Now With 30% More Nudity!";
+    subtitles[19] = "Funopticon II: Funopticon Gone Wild";
+    subtitles[20] = "The Rise and Fall of the Second Funopticon";
+    subtitles[21] = "Curb Your Funopticon";
+    subtitles[22] = "Make Funopticon Great Again";
+    subtitles[23] = "Tyler Perry's Funopticon II";
+    subtitles[24] = "Funopticon II (Ft. DJ Khaled)";
+    subtitles[25] = "Funopticon Extended Release";
+    subtitles[26] = "Funopticon II: New Snortable Formula";
+    subtitles[27] = "The Ones Who Walk Away From Funopticon";
+    subtitles[28] = "Funopticon II: The Neverending Funopticon";
+    subtitles[30] = "FIMBY (Funopticon In My Backyard)";
+    subtitles[31] = "Funopticon II: <a href=\"https://everymac.com/images/cpu_pictures/apple_ipod_u2_5g.jpg\">U2 Special Edition</a>";
+    subtitles[32] = "My Beautiful Dark Twisted Funopticon";
+    subtitles[33] = "2 Girls 1 Funopticon";
+    subtitles[34] = "Eternal Funopticon of the Spotless Mind";
+    subtitles[35] = "Funopticon II: Wrath of 'Con";
+    subtitles[36] = "My Big Fat Greek Funopticon";
+    subtitles[37] = "A Heartbreaking Funopticon of Staggering Genius";
+    subtitles[38] = "Funopticon II: Bend It Like Bentham";
 
     var myRandom = Math.floor(Math.random()*subtitles.length);
 
@@ -49,105 +70,126 @@ $( document ).ready(function() {
 <body>
 
     <div id="main">
-        <div class="new">
-            <img src="img/new.png" alt="New!">
-        </div><!--new-->
+        <div class="section">
+            <div class="new">
+                <img src="img/new.png" alt="New!">
+            </div><!--new-->
+
+            <div class="omg">
+                <img src="img/omg.png" alt="OMG">
+            </div><!--new-->
+
+            <img src="img/logo.png" alt="Funopticon II" class="logo">
+            <div class="subtitles"></div>
     
-        <div class="omg">
-            <img src="img/omg.png" alt="OMG">
-        </div><!--new-->
+            <img src="img/memories-oneline.png" class="memories" alt="Make your best memories of the year">
 
-        <img src="img/logo.png" alt="Funopticon II" class="logo">
-        <div class="subtitles"></div>
-        
-        <img src="img/memories-oneline.png" class="memories" alt="Make your best memories of the year">
-
-        <img src="img/memories.png" class="memories memories-mobile" alt="Make your best memories of the year">
-        
-        <div class="nav">
-            <a href="#about" class="about-link">About<a/>
-            <a href="#location" class="location-link">Location & Date</a>
-            <a href="#values" class="values-link">Core Values</a>
-            <a href="#tickets" class="tickets-link">Tickets</a>
-            <a href="#faq" class="faq-link">FAQ</a>
-        </div><!--nav-->
-        
-        <div class="border"></div>
-        
-        <a name="about"></a>
+            <img src="img/memories.png" class="memories memories-mobile" alt="Make your best memories of the year">
+    
+            <div class="nav">
+                <a href="#about" class="nav-item nav-about">About<a/>
+                <a href="#location" class="nav-item nav-where-and-when">Where & When</a>
+                <a href="#values" class="nav-item nav-values">Core Values</a>
+                <a href="#tickets" class="nav-item nav-tickets">Tickets</a>
+                <a href="#organizers" class="nav-item nav-organizers">Organizers</a>
+                <a href="#faq" class="nav-item nav-faq">FAQ</a>
+            </div><!--nav-->
+        </div><!--section-->
+                
         <div class="section">
-            <h2 class="section-title">About</h2>
-            <p>Funopticon is a three-day weekend of fun & games, bonding, debauchery, and World War II documentaries*. Think of it as being somewhere in between summer camp for adults and a music festival minus the music.</p>
-            <p>95% of last year&rsquo;s attendees said Funopticon was one of their top five experiences of the year.</p>
-            <img src="img/chart.jpg" class="chart">
-            <p class="small">*World War II documentaries sold separately.</p>
+            <div class="section-inner">
+                <a name="about"></a>
+                <img src="img/about.png" alt="About" class="section-title about">
+                <p>Funopticon is a three-day weekend of fun & games, bonding, debauchery, and World War II documentaries*. Think of it as being somewhere in between summer camp for adults and a music festival minus the music.</p>
+                <p>95% of last year&rsquo;s attendees said Funopticon was one of their top five experiences of the year.</p>
+                <img src="img/chart.png" class="chart">
+                <p class="small">*World War II documentaries sold separately.</p>
+            </div><!--inner-->
         </div><!--section-->
 
-        <div class="border red"></div>
-
-        <a name="location"></a>
         <div class="section">
-            <h2 class="section-title">Location & Date</h2>
-            <p>Lorem Ipsum.</p>
+            <div class="section-inner">
+                <a name="location"></a>
+                <img src="img/where-and-when.png" alt="Where & When" class="section-title where-and-when">
+                <p>Funopticon II is 8/13&ndash;6 at <a href="https://www.google.com/maps/place/Berkshire+Hills+Eisenberg+Camp/@42.0793435,-73.5763244,17z/data=!3m1!4b1!4m5!3m4!1s0x89dd84170549c63b:0x15905cc32f34f77c!8m2!3d42.0793395!4d-73.5741357?shorturl=1">Berkshire Hills Eisenberg Camp</a>.</p>
+                <p>The camp this year is a shorter drive from New York City and Boston than last year&rsquo;s camp was. It is about the same distance from Albany. It is also more rural and thus may not have cell service.</p>
+                <p>You are welcome to arrive after 5 PM on Thursday (8/13). We expect most people will arrive later that evening so they don&rsquo;t have to take more than Friday off work, or because travelling takes the entire day. The camp will serve dinner around 7:30 PM.</p>
+                <p>The opening ceremony, <b>which you must attend</b>, is at 1 PM on Friday (8/14). Any attendees taking a red-eye on Thursday night/Friday morning should be able to reach camp by then.</p>
+                <p>There is no strict end time on Sunday (8/16), but we expect most people will depart in the morning or early afternoon.</p>
+            </div><!--section-inner-->
         </div><!--section-->
 
-        <div class="border blue"></div>
-
-        <a name="values"></a>
-        <div class="section values-section">
-            <h2 class="section-title">Our Core Values</h2>
-            <div class="values">
-                <div class="value">
-                    <h3>Construct the Spectacle</h3>
-                    <p>Build something great together.</p>
-                </div><!--value-->
-                <div class="value">
-                    <h3>Make Myths</h3>
-                    <p>Turn events into legends.</p>
-                </div><!--value-->
-                <div class="value">
-                    <h3>Request Enthusiasm</h3>
-                    <p>Respect boundaries and be explicit about consent.</p>
-                </div><!--value-->
-                <div class="value">
-                    <h3>Be the Friend You Want to Make</h3>
-                    <p>Imagine the most fun person you could meet and act like that person.</p>
-                </div><!--value-->
-            </div><!--values-->
+        <div class="section">
+            <div class="section-inner values-section">
+                <a name="values"></a>
+                <img src="img/core-values.png" alt="Core Values" class="section-title core-values">
+                <div class="values">
+                    <div class="value">
+                        <div class="values-image-container">
+                            <img src="img/values-spectacle.png" class="values-image values-image-spectacle" alt="Construct the Spectacle">
+                        </div>
+                        <h3>Construct the Spectacle</h3>
+                        <p>Build something great together.</p>
+                    </div><!--value-->
+                    <div class="value">
+                        <div class="values-image-container">
+                            <img src="img/values-myths.png" class="values-image" alt="Make Myths">
+                        </div>
+                        <h3>Make Myths</h3>
+                        <p>Turn events into legends.</p>
+                    </div><!--value-->
+                    <div class="value">
+                        <div class="values-image-container">
+                            <img src="img/values-enthusiasm.png" class="values-image" alt="Request Enthusiasm">
+                        </div>
+                        <h3>Request Enthusiasm</h3>
+                        <p>Respect boundaries and be explicit about consent.</p>
+                    </div><!--value-->
+                    <div class="value">
+                        <div class="values-image-container">
+                            <img src="img/values-friend.png" class="values-image" alt="Be the Friend You Want to Make">
+                        </div>
+                        <h3>Be the Friend You Want to Make</h3>
+                        <p>Imagine the most fun person you could meet and act like that person.</p>
+                    </div><!--value-->
+                </div><!--values-->
+            </div><!--section-inner-->
         </div><!--section-->
 
-        <div class="border plum"></div>
-
-        <a name="tickets"></a>
         <div class="section">
-            <h2 class="section-title">Tickets</h2>
-            <p>Tickets to Funopticon are $250, with the option to pay in five  installments of $50 each. Your ticket includes lodging, meals, some alcohol, and some secret Funopticon surprises.</p>
-            <a href="#">Buy Tickets</a>
-            <p class="small">If financial hardship is going to prevent you from coming to Funopticon, please <a href="mailto:hello@funopticon.life">contact us</a>.</p>
+            <div class="section-inner">
+                <a name="tickets"></a>
+                <img src="img/tickets.png" alt="Tickets" class="section-title tickets">
+                <p>Tickets to Funopticon are $250, with the option to pay in five  installments of $50 each. Your ticket includes lodging, meals, alcohol (though we recommend supplementing with your own), and some secret Funopticon surprises.</p>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSfhIys1Ut59FgfBGSgsAaGag5LDm7GK0ncIudqe_tc2Y3AhCA/viewform" class="buy-tickets">Buy Tickets</a>
+            </div><!--section-inner-->
         </div><!--section-->
 
-        <div class="border yellow"></div>
-
-        <a name="about"></a>
         <div class="section">
-            <h2 class="section-title">About the Organizers</h2>
-            <img src="img/max-and-tim.jpg" alt="Max and Tim" class="max-and-tim">
-            <p>Max and Tim (pictured above) met as fellows in the inaugural class of Venture for America, where their questionable futures and general unemployability inspired Andrew Yang to run for President on a platform of universal basic income. They later honed their culture-building skills as startup founders and part-time cult leaders. Collectively, they have inspired hundreds of people to make regrettable life decisions.</p>
+            <div class="section-inner">
+                <a name="organizers"></a>
+                <img src="img/about-the-organizers.png" alt="About the Organizers" class="section-title organizers">
+                <img src="img/max-and-tim.jpg" alt="Max and Tim" class="max-and-tim">
+                <p>Max and Tim (pictured above) met as fellows in the inaugural class of Venture for America, where their questionable futures and general unemployability inspired Andrew Yang to run for President on a platform of universal basic income. They later honed their culture-building skills as startup founders and part-time cult leaders. Collectively, they have inspired hundreds of people to make regrettable life decisions.</p>
+            </div><!--section-inner-->
         </div><!--section-->
   
-        <div class="border blue-green"></div>
-
-        <a name="faq"></a>
         <div class="section">
-            <h2 class="section-title">FAQ</h2>
-            <p class="question">Can I invite my friends/lovers/enemies?</p>
-            <p>We will eventually open ticket sales to the general public, but for the first month, tickets are reserved exclusively for people who attended last year&rsquo;s Funopticon.</p>
-            <p class="question">Can I get a cheaper ticket if I can only come for two days?</p>
-            <p>No. Since most of our costs are fixed, two-day tickets would have only been $25 cheaper, so we decided the extra logistics created by  two ticket classes weren&rsquo;t worth it. If you can only make it for two days, consider the extra $25 a donation to the Funopticon general fund&mdash;or an option on coming for all three days at the last minute.</p>
-            <p class="question">Are you guys making money on this?</p>
-            <p>No, we&rsquo;re running Funopticon at cost... assuming we get the math right. Last year we actually lost money.</p>
-            <p class="question">Why is it called Funopticon?</p>
-            <p><a href="https://en.wikipedia.org/wiki/Panopticon">The Panopticon</a> is a type of institutional building and a system of control designed by the English philosopher and social theorist Jeremy Bentham in the late 18th century. This is like that, but fun.</p>
+            <div class="section-inner">
+                <a name="faq"></a>
+                <img src="img/faq.png" alt="FAQ" class="section-title faq">
+                <p class="question">Can I invite my friends/lovers/enemies?</p>
+                <p>Yes! When you <a href="https://docs.google.com/forms/d/e/1FAIpQLSfhIys1Ut59FgfBGSgsAaGag5LDm7GK0ncIudqe_tc2Y3AhCA/viewform">get your ticket</a>, we&rsquo;ll ask you for the name and email address of one other person you&rsquo;d like to invite. If there&rsquo;s room, we&rsquo;ll open up invites further down the road.</p>
+                <p class="question">Can I get a cheaper ticket if I can only come for two days?</p>
+                <p>No. Since most of our costs are fixed, two-day tickets would have only been $25 cheaper, so we decided the extra logistics created by  two ticket classes weren&rsquo;t worth it. If you can only make it for two days, consider the extra $25 a donation to the Funopticon general fund&mdash;or an option on coming for all three days at the last minute.</p>
+                <p class="question">Are you guys making money on this?</p>
+                <p>No, we&rsquo;re running Funopticon at cost... assuming we get the math right. Last year we actually lost money.</p>
+                <p class="question">Why is it called Funopticon?</p>
+                <p><a href="https://en.wikipedia.org/wiki/Panopticon">The Panopticon</a> is a type of institutional building and a system of control designed by the English philosopher and social theorist Jeremy Bentham in the late 18th century. This is like that, but fun.</p>
+                <p class="question">How many variations on the name Funopticon II did you come up with?</p>
+                <p>Way too many. You can see the full list <a href="names.txt">here</a>... but you probably shouldn&rsquo;t.</p>
+                <img src="img/dig-it.png" class="dig-it">
+            </div><!--section-inner-->
         </div><!--section-->
 
     </div><!--main-->
