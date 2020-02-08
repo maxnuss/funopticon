@@ -46,6 +46,37 @@ a:hover:after {
     background: #e9b3c4;
 }
 
+.tickets-float {
+    display: block;
+    text-indent: -9000px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-image: url('img/tickets-float.png');
+    background-size: 100%;
+    background-position: top center;
+    width: 200px;
+    height: 145px;
+    transition: transform .05s ease;
+    transform: rotate(5deg);
+    z-index: 100;
+}
+
+.tickets-float:hover {
+    background-position: bottom center;
+    transform: rotate(5deg) scale(1.05);
+}
+
+.tickets-float:after {
+    display: none;
+}
+
+@media (max-width: 1000px) {
+    .tickets-float {
+        display: none;
+    }
+}
+
 #main {
     max-width: 87%;
     width: 1000px;
@@ -83,6 +114,10 @@ a:hover:after {
 
 @media (max-width: 1000px) {
     .omg {
+        display: none;
+    }
+    
+    .new {
         display: none;
     }
 }
@@ -148,6 +183,8 @@ a:hover:after {
 .nav {
     text-align: center;
     font-size: 1.2rem;
+    max-width: 850px;
+    margin: 0 auto;
 }
 
 .nav-item {
