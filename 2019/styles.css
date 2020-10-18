@@ -6,6 +6,7 @@ body {
 
 body {
 	background-image: url('img/pattern-2.jpg');
+	background-size: 796px 500px;
 	font-size: 1.2em;
 	line-height: 1.4;
 }
