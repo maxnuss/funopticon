@@ -80,11 +80,15 @@ a:hover:after {
 	transform: rotate(0.7deg);
 }
 
-.tagline {
+.tagline-desktop {
 	width: 650px;
 	max-width: 90%;
 	display: block;
 	margin: 40px auto 0;
+}
+
+.tagline-mobile {
+	display: none;
 }
 
 .nav {
@@ -314,6 +318,11 @@ a:hover:after {
 	margin: 0;
 }
 
+.values-grid-value h3.make-myths {
+	max-width: 140px;
+	margin: 0 auto;
+}
+
 .alex-iran {
 	position: fixed;
 	width: 500px;
@@ -379,43 +388,38 @@ a:hover:after {
 }
 
 @media (max-width: 600px) {
+	.nav-link {
+		margin: 0 9px;
+	}
+	
 	.nav-link--about {
-		width: 50px;
-		height: 20px;
+		width: 70px;
+		height: 28px;
 	}
 
 	.nav-link--tickets {
-		width: 70px;
-		height: 22px;
+		width: 90px;
+		height: 30px;
 	}
 
 	.nav-link--organizers {
-		width: 76px;
-		height: 25px;
+		width: 90px;
+		height: 30px;
 	}
 
 	.nav-link--where-when {
-		width: 40px;
-		height: 36px;
+		width: 56px;
+		height: 54px;
 	}
 
 	.nav-link--values {
-		width: 72px;
-		height: 25px;
+		width: 100px;
+		height: 35px;
 	}
 
 	.nav-link--faq {
 		width: 45px;
-		height: 22px;
-	}
-	
-	.title-image-about,
-	.title-image-where-when,
-	.title-image-tickets,
-	.title-image-core-values,
-	.title-image-organizers,
-	.title-image-faq {
-		transform: scale(0.75);
+		height: 25px;
 	}
 	
 	.line {
@@ -437,5 +441,32 @@ a:hover:after {
 	
 	.funopticon-wordmark {
 		margin: 0 auto;
+	}
+	
+	.alex-iran {
+		width: 95%;
+		margin-left: 5px;
+		margin-top: 40px;
+		left: 0;
+	}
+	
+	.values-grid-value h3 {
+		font-size: 1rem;
+	}
+	
+	.values-grid {
+		grid-template-columns: 1fr;
+		grid-gap: 30px;
+	}
+	
+	.tagline-mobile {
+		width: 300px;
+		max-width: 90%;
+		display: block;
+		margin: 30px auto 0;
+	}
+
+	.tagline-desktop {
+		display: none;
 	}
 }
