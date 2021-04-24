@@ -1,0 +1,441 @@
+html, body {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Rubik', serif;
+	font-size: 1.08rem;
+	background-image: url('img/blue-paper.jpg');
+}
+
+::selection {
+  color: #fff;
+  background: #5dbecc;
+}
+
+img {
+	max-width: 100%;
+}
+
+p {
+	line-height: 1.5;
+}
+
+.small {
+	font-size: 0.85rem;
+}
+
+a {
+	color: #0C7C59;
+	text-decoration: none;
+	position: relative;
+  transition: all .2s ease;
+  z-index: 1;
+}
+
+a:after {
+	position: absolute;
+	content: '';
+	height: 4px;
+	bottom:2px; 
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+	width: 100%;
+	background: #f6ef31;
+	z-index: -1;
+	transition: all .2s ease;
+}
+
+a:hover {
+	color: #982649;
+}
+
+a:hover:after {
+	background: #e9b3c4;
+}
+
+.funtext, h1, h2, h3 {
+	font-family: 'Dela Gothic One', sans-serif;
+}
+
+.content-box {
+	margin: 30px auto;
+	padding: 30px 0;
+	max-width: 95%;
+	width: 940px;
+	background: url('img/graph-paper.png');
+	background-size: 100% auto;
+	background-repeat: repeat-y;
+	min-height: 100px;
+	box-shadow: 2px 3px 6px 6px rgba(0,0,0,0.15);
+	transform: rotate(0.2deg);
+}
+
+.logo {
+	display: block;
+	width: 570px;
+	margin: 0 auto;
+	transform: rotate(0.7deg);
+}
+
+.tagline {
+	width: 650px;
+	max-width: 90%;
+	display: block;
+	margin: 40px auto 0;
+}
+
+.nav {
+	margin: 40px auto 40px;
+	text-align: center;
+	background-image: url('img/navbar-bg.png');
+	background-size: 100% 100%;
+	transform: scale(0.98);
+	transform-origin: center;
+	padding: 30px 10px;
+	max-width: 90%;
+}
+
+.nav a:after {
+	display: none;
+}
+
+.nav-link {
+	width: 100px;
+	display: inline-block;
+	background-position: top right;
+	transition: none;
+	background-size: 100%;
+	margin: 0 13px;
+	vertical-align: middle;
+	transform: scale(1);
+	transition: transform .1s ease;
+}
+
+.nav-link:hover {
+	background-position: bottom right;
+	transform: scale(1.1);
+}
+
+.nav-link--about {
+	background-image: url('img/nav-about.png');
+	width: 100px;
+	height: 41px;
+}
+
+.nav-link--tickets {
+	background-image: url('img/nav-tickets.png');
+	width: 140px;
+	height: 55px;
+}
+
+.nav-link--organizers {
+	background-image: url('img/nav-organizers.png');
+	width: 152px;
+	height: 51px;
+}
+
+.nav-link--where-when {
+	background-image: url('img/nav-where-when.png');
+	width: 80px;
+	height: 77px;
+}
+
+.nav-link--values {
+	background-image: url('img/nav-values.png');
+	width: 144px;
+	height: 50px;
+}
+
+.nav-link--faq {
+	background-image: url('img/nav-faq.png');
+	width: 90px;
+	height: 53px;
+}
+
+.section {
+	padding: 30px 0;
+	width: 550px;
+	max-width: 90%;
+	margin: 0 auto;
+}
+
+.section--values {
+	width: 700px;
+}
+
+.section--organizers {
+	width: 600px;
+}
+
+.section--organizers p {
+	max-width: 550px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.section h1 {
+	text-align: center;
+}
+
+.title-image-about {
+	width: 250px;
+	display: block;
+	margin: 0 auto;
+}
+
+.title-image-tickets {
+	width: 450px;
+	display: block;
+	margin: 0 auto;
+}
+
+.title-image-core-values {
+	width: 300px;
+	display: block;
+	margin: 0 auto;
+}
+
+.title-image-where-when {
+	width: 370px;
+	display: block;
+	margin: 0 auto;
+}
+
+.title-image-faq {
+	width: 370px;
+	display: none;
+	margin: 0 auto 30px;
+}
+
+.title-image-organizers {
+	width: 600px;
+	display: block;
+	margin: 0 auto 10px;
+}
+
+.graph {
+	display: block;
+	margin: 30px auto;
+	width: 500px;
+	border: 1px solid #cecece;
+	transform: rotate(-0.7deg);
+}
+
+.faq-item {
+	margin: 25px 0;
+}
+
+.faq-item p {
+	margin: 0;
+}
+
+.faq-item p:first-child {
+	font-family: 'Dela Gothic One', sans-serif;
+	color: #0e4053;
+	font-size: 1rem;
+	margin-bottom: 5px;
+}
+
+.tickets-button {
+	display: block;
+	background-image: url('img/tickets-button.png');
+	background-size: 100%;
+	text-indent: -9000px;
+	margin: 10px auto;
+	background-position: top left;
+	width: 254px;
+	height: 108px;
+	transition: transform .1s ease;
+	transform: scale(1);
+}
+
+.tickets-button:hover {
+	background-position: bottom left;
+	transform: scale(1.05);
+}
+
+.tickets-button:after {
+	display: none;
+}
+
+.line {
+	display: block;
+	width: 700px;
+	margin: 40px auto;
+	max-width: 90%;
+}
+
+.alex-and-max {
+	width: 350px;
+	display: block;
+	margin: 20px auto;
+	transform: rotate(0.3deg);
+}
+
+.values-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 50px;
+	margin-top: 40px;
+}
+
+.values-grid-value {
+	text-align: center;
+}
+
+.values-grid-value img {
+	display: block;
+	margin: 0 auto;
+	width: 75%;
+}
+
+.values-grid-value h3 {
+	color: #0e531e;
+	margin: 0 auto 10px;
+	max-width: 240px;
+}
+
+.values-grid-value:nth-child(2) h3 {
+	color: #53280e;
+}
+
+.values-grid-value:nth-child(3) h3 {
+	color: #530e0e;
+}
+
+.values-grid-value:nth-child(4) h3 {
+	color: #0e3b53;
+}
+
+.values-grid-value p {
+	margin: 0;
+}
+
+.alex-iran {
+	position: fixed;
+	width: 500px;
+	top: 20px;
+	z-index: 10;
+	margin-left: -250px;
+	left: 50%;
+	background: white;
+	border-radius: 12px;
+	box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+	display: none;
+}
+
+.alex-iran img {
+	display: block;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.lightbox-bg {
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	z-index: 9;
+	background: rgba(0,0,0,0.5);
+	display: none;
+}
+
+.funopticon-wordmark {
+	display: block;
+	width: 100%;
+	margin: 20px auto;
+	background-image: url('img/funopticon.png');
+	background-position:center;
+	background-size: auto 100%;
+	background-repeat: repeat-x;
+	height: 50px;
+}
+
+.proof {
+	font-size: 80%;
+	text-align: center;
+	color: #0e4053;
+	font-style: italic;
+}
+
+@media (max-width: 950px) {
+	.nav {
+		width: 500px;
+	}
+	
+	.nav-link:nth-child(1),
+	.nav-link:nth-child(2),
+	.nav-link:nth-child(3) {
+		margin-bottom: 20px;
+	}
+	
+	.content-box {
+		transform: none;
+	}
+}
+
+@media (max-width: 600px) {
+	.nav-link--about {
+		width: 50px;
+		height: 20px;
+	}
+
+	.nav-link--tickets {
+		width: 70px;
+		height: 22px;
+	}
+
+	.nav-link--organizers {
+		width: 76px;
+		height: 25px;
+	}
+
+	.nav-link--where-when {
+		width: 40px;
+		height: 36px;
+	}
+
+	.nav-link--values {
+		width: 72px;
+		height: 25px;
+	}
+
+	.nav-link--faq {
+		width: 45px;
+		height: 22px;
+	}
+	
+	.title-image-about,
+	.title-image-where-when,
+	.title-image-tickets,
+	.title-image-core-values,
+	.title-image-organizers,
+	.title-image-faq {
+		transform: scale(0.75);
+	}
+	
+	.line {
+		margin: 0 auto;
+	}
+	
+	.tickets-button {
+		width: 200px;
+		height: 85px;
+	}
+	
+	.proof {
+		font-size: 75%;
+	}
+	
+	.alex-and-max {
+		width: 85%;
+	}
+	
+	.funopticon-wordmark {
+		margin: 0 auto;
+	}
+}
