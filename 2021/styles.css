@@ -98,7 +98,7 @@ a:hover:after {
 	background-size: 100% 100%;
 	transform: scale(0.98);
 	transform-origin: center;
-	padding: 30px 10px;
+	padding: 30px 8px;
 	max-width: 90%;
 }
 
@@ -112,7 +112,7 @@ a:hover:after {
 	background-position: top right;
 	transition: none;
 	background-size: 100%;
-	margin: 0 13px;
+	margin: 0 8px;
 	vertical-align: middle;
 	transform: scale(1);
 	transition: transform .1s ease;
