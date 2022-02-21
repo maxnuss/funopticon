@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Funopticon</title>
+    <link rel="icon" href="favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Work+Sans:ital,wght@0,300;0,800;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/b874ec076e.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  </head>
+  
+  <script>
+		$(document).ready(function(){
+			var random = Math.floor(Math.random() * 2);
+			console.log(random);
+
+			if (random == 1) {
+				setTimeout(
+					function(){
+						$('.ad-meat').slideDown(100);
+					}, 600);
+			}
+			
+			if (random == 0) {
+				setTimeout(
+					function(){
+						$('.ad-dew').slideDown(100);
+					}, 600);
+			}
+			
+			var random2 = Math.floor(Math.random() * 2);
+			console.log(random2);
+
+			if (random2 == 1) {
+				setTimeout(
+					function(){
+						$('.ad-bloomberg').slideDown(150);
+					}, 700);
+			}
+			
+			if (random2 == 0) {
+				setTimeout(
+					function(){
+						$('.ad-hair').slideDown(150);
+					}, 700);
+			}
+			
+			var random3 = Math.floor(Math.random() * 2);
+			console.log(random3);
+
+			if (random3 == 1) {
+				setTimeout(
+					function(){
+						$('.ad-phrenology').css('right','10px');
+					}, 950);
+			}
+			
+			if (random3 == 0) {
+				setTimeout(
+					function(){
+						$('.ad-telepathy').css('right','10px');
+					}, 950);
+			}
+
+			var random4 = Math.floor(Math.random() * 2);
+			console.log(random4);
+
+			if (random4 == 1) {	
+				setTimeout(
+					function(){
+						$('.ad-bible').slideDown(200);
+					}, 850);
+			}
+			
+			if (random4 == 0) {		
+				setTimeout(
+					function(){
+						$('.ad-plants').slideDown(200);
+					}, 850);
+			}
+			
+			var random5 = Math.floor(Math.random() * 2);
+			console.log(random5);
+
+			if (random5 == 1) {	
+				setTimeout(
+					function(){
+						$('.ad-pets').css('top','300px');
+					}, 1000);
+			}
+			
+			if (random5 == 0) {		
+				setTimeout(
+					function(){
+						$('.ad-bird').css('top','30%');
+					}, 1000);
+			}
+			
+			var random6 = Math.floor(Math.random() * 2);
+			console.log(random6);
+
+			if (random6 == 1) {	
+				setTimeout(
+					function(){
+						$('.ad-snake-oil').css('bottom','20px');
+				}, 1200);
+			}
+			
+			if (random6 == 0) {		
+				setTimeout(
+					function(){
+						$('.ad-bugspray').css('bottom','20px');
+				}, 1200);
+			}
+			
+			var leftRightRandom = Math.floor(Math.random() * 2);
+			console.log(leftRightRandom);
+
+			if (leftRightRandom == 1) {
+				$('.ad-columns-left').addClass('ad-columns-left--alt');
+				$('.ad-columns-right').addClass('ad-columns-right--alt');
+			}
+								 
+			$('.ad-close').click(function(){
+				$(this).parent().hide();
+			});
+
+		});
+  </script>
+  
+  <body class="">
+  	<div class="ad ad-bloomberg">
+  		<i class="fa fa-close ad-close"></i>
+  		<a href="#"><img src="img/ad-bloomberg.gif" alt="ad"></a>
+  	</div><!--ad-bloomberg-->
+  	<div class="ad ad-hair">
+  		<i class="fa fa-close ad-close"></i>
+  		<a href="#"><img src="img/ad-hair-big.gif" alt="ad"></a>
+  	</div><!--ad-hair-->
+  	
+  	<div class="ad ad-phrenology">
+  		<i class="fa fa-close ad-close"></i>
+  		<a href="#"><img src="img/ad-phrenology.gif" alt="ad"></a>
+  	</div><!--ad-phrenology-->
+  	<div class="ad ad-telepathy">
+  		<i class="fa fa-close ad-close"></i>
+  		<a href="#"><img src="img/ad-telepathy-big.gif" alt="ad"></a>
+  	</div><!--ad-telepathy-->
+  	
+  	<div class="ad ad-bible">
+  		<i class="fa fa-close ad-close"></i>
+  		<a href="#"><img src="img/ad-bible.gif" alt="ad"></a>
+  	</div><!--ad-bible-->
+  	<div class="ad ad-plants">
+  		<i class="fa fa-close ad-close"></i>
+  		<a href="#"><img src="img/ad-plants-big.gif" alt="ad"></a>
+  	</div><!--ad-plants-->
+  	
+  	<div class="ad ad-meat">
+  		<i class="fa fa-close ad-close"></i>
+  		<a href="#"><img src="img/ad-meat.gif" alt="ad"></a>
+  	</div><!--ad-meat-->
+  	<div class="ad ad-dew">
+  		<i class="fa fa-close ad-close"></i>
+  		<a href="#"><img src="img/ad-dew-big.gif" alt="ad"></a>
+  	</div><!--ad-dew-->
+  	
+  	<div class="ad ad-pets">
+  		<i class="fa fa-close ad-close"></i>
+  		<a href="#"><img src="img/ad-pets.gif" alt="ad"></a>
+  	</div><!--ad-pet-->
+  	<div class="ad ad-bird">
+  		<i class="fa fa-close ad-close"></i>
+  		<a href="#"><img src="img/ad-bird.gif" alt="ad"></a>
+  	</div><!--ad-bird-->
+  	
+  	<div class="ad ad-snake-oil">
+  		<i class="fa fa-close ad-close"></i>
+  		<a href="#"><img src="img/ad-snake-oil-big.gif" alt="ad"></a>
+  	</div>
+  	
+  	<div class="ad ad-bugspray">
+  		<i class="fa fa-close ad-close"></i>
+  		<a href="#"><img src="img/ad-bugspray.gif" alt="ad"></a>
+  	</div>
+  	
+    <div class="main">
+    	<img src="img/logo-animated.gif" alt="Funopticon logo" class="logo">
+    	<img src="img/logotype.png" alt="Funopticon" class="logotype">
+    	<img src="img/memories.gif" alt="Make your best memories of the year" class="memories">
+    	
+    	<div class="nav-container">
+    		<a href="#about" class="nav nav-about"></a>
+    		<a href="#when-where" class="nav nav-where-when"></a>
+    		<a href="#values" class="nav nav-values"></a>
+    		<a href="#tickets" class="nav nav-tickets"></a>
+    		<a href="#organizers" class="nav nav-organizers"></a>
+    		<a href="#faq" class="nav nav-faq"></a>
+    	</div><!--nav-->
+    	
+    	<img src="img/ad-dew.gif" alt="ad" class="ad-columns ad-columns-left ad-columns-1">
+    	<img src="img/ad-hair.gif" alt="ad" class="ad-columns ad-columns-left ad-columns-2">
+    	<img src="img/ad-bible-small.gif" alt="ad" class="ad-columns ad-columns-left ad-columns-3">
+    	<img src="img/ad-bloomberg-small.gif" alt="ad" class="ad-columns ad-columns-left ad-columns-4">
+    	<img src="img/ad-phrenology-small.gif" alt="ad" class="ad-columns ad-columns-left ad-columns-5">
+    	<img src="img/ad-funopticon.gif" alt="ad" class="ad-columns ad-columns-left ad-columns-6">
+    	<img src="img/ad-punch.gif" alt="ad" class="ad-columns ad-columns-left ad-columns-7">
+    	
+    	<img src="img/ad-telepathy.gif" alt="ad" class="ad-columns ad-columns-right ad-columns-1">
+    	<img src="img/ad-plants.gif" alt="ad" class="ad-columns ad-columns-right ad-columns-2">
+    	<a href="https://drive.google.com/file/d/1815UYTe7wf117bFuN2KnDyi6WNcr2EbD/view?usp=sharing" target="_new" class="ad-columns ad-columns-right ad-columns-3"><img src="img/ad-alex.gif" alt="ad"></a>
+    	<img src="img/ad-pets-small.gif" alt="ad" class="ad-columns ad-columns-right ad-columns-4">
+			<img src="img/ad-meat-small.gif" alt="ad" class="ad-columns ad-columns-right ad-columns-5">
+			<img src="img/ad-cards.gif" alt="ad" class="ad-columns ad-columns-right ad-columns-6">
+			<img src="img/ad-snake-oil.gif" alt="ad" class="ad-columns ad-columns-right ad-columns-7">
+    	
+    	<div class="main-container">
+    	
+    		<a name="about"></a>
+    		<div class="section">
+					<img src="img/headers/header-about.png" class="header header-about" alt="About">
+					<div class="main-container-inner">
+						<p>Funopticon is an extended weekend of fun & games, debauchery, and regrets*. Think of it as being somewhere in between summer camp for adults and a music festival minus the music.</p>
+
+						<p>93% of those who attended in 2021 said Funopticon was one of their top five experiences of the year:</p>
+						
+						<img src="img/chart.png" alt="chart of results" class="chart">
+					
+						<p class="small">*Regrets optional but recommended</p>
+					</div><!--main-container-inner-->
+				</div><!--section-->
+				
+				<img src="img/ad-bloomberg-mobile.gif" class="ad-mobile" alt="Sponsored Content">
+				
+				<a name="when-where"></a>
+    		<div class="section">
+					<img src="img/headers/header-when-where.png" class="header header-when-where" alt="When & Where">
+					<div class="main-container-inner">
+						<p>Funopticon 2022 is August 25&ndash;28 at <a href="https://www.google.com/maps/place/Berkshire+Hills+Eisenberg+Camp/@42.0793435,-73.5763244,17z/data=!3m1!4b1!4m5!3m4!1s0x89dd84170549c63b:0x15905cc32f34f77c!8m2!3d42.0793395!4d-73.5741357?shorturl=1">Berkshire Hills Eisenberg Camp</a> (the same place as last year).</p>
+						<p>The camp is around a three hour drive from New York City, and roughly one hour from the Albany airport. We&rsquo;ll collect transportation info from everyone attending and help coordinate carpools.</p>
+						<p>You are welcome to arrive anytime after 3pm EST on Thursday <span class="paren">(8/25)</span>. The camp will serve dinner on Thursday around 7pm.</p>
+						<p>The opening ceremony is at 4pm on Friday <span class="paren">(8/26)</span>. <strong>The opening ceremony is mandatory</strong>, so when making travel plans, make sure you can arrive by then.</p>
+						<p>Check-out time is 11am Sunday <span class="paren">(8/28)</span>. Formal programming will end on Saturday night, though there will be breakfast served on Sunday morning.</p>
+					</div><!--main-container-inner-->
+				</div><!--section-->
+				
+				<img src="img/ad-cards-mobile.gif" class="ad-mobile" alt="Sponsored Content">
+				
+				<a name="values"></a>
+    		<div class="section">
+					<img src="img/headers/header-values.png" class="header header-values" alt="Core Values">
+					<div class="main-container-inner">
+						<div class="values-grid">
+							<div class="values-grid-value">
+								<img src="img/values-spectacle.png">
+								<h3>Construct the Spectacle</h3>
+								<p>Build something great together.</p>
+							</div>
+							<div class="values-grid-value">
+								<img src="img/values-myths.png">
+								<h3 class="make-myths">Make Myths</h3>
+								<p>Turn events into legends.</h3>
+							</div>
+							<div class="values-grid-value">
+								<img src="img/values-enthusiasm.png">
+								<h3 class="request-enthusiasm">Request Enthusiasm</h3>
+								<p>Respect boundaries and be explicit about consent.</p>
+							</div>
+							<div class="values-grid-value">
+								<img src="img/values-friend.png">
+								<h3>Be the Friend You Want to Make</h3>
+								<p>Imagine the most fun person you could meet, and be like that person.</p>
+							</div>
+						</div><!--values-grid-->
+					</div><!--main-container-inner-->
+				</div><!--section-->
+				
+				<img src="img/ad-dew-mobile.gif" class="ad-mobile" alt="Sponsored Content">
+		
+				<a name="tickets"></a>
+    		<div class="section">
+					<img src="img/headers/header-tickets.png" class="header header-when-where" alt="Tickets">
+					<div class="main-container-inner">
+						<p>Tickets to Funopticon are $420.69, with the option to pay in four installments of $105.75 each if you purchase your ticket before May. Your ticket includes lodging, meals, alcohol (though we recommend supplementing with your own), and some secret Funopticon surprises.</p>
+						<a href="https://docs.google.com/forms/d/e/1FAIpQLSe5P_hLTgtrSssv1r2vqmxZJsb7wu-nnb78vHBBH_haFgh4hA/viewform" class="buy-tickets">Get Your Ticket</a>
+						<p class="discount-tickets">Discounted tickets are available if ticket cost is an issue for you. Reach out to us at <a href="mailto:hello@funopticon.life">hello@funopticon.life</a> to learn more.</p>
+					</div><!--main-container-inner-->
+				</div><!--section-->
+				
+				<img src="img/ad-meat-mobile.gif" class="ad-mobile" alt="Sponsored Content">
+				
+				<a name="organizers"></a>
+    		<div class="section">
+					<img src="img/headers/header-organizers.png" class="header header-organizers" alt="About the Organizers">
+					<div class="main-container-inner">
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in sapien magna. Morbi sodales maximus lectus. Aenean nisi ex, commodo et enim sit amet, fringilla viverra odio. Phasellus aliquet ultricies suscipit. Nunc ultricies arcu in tempor congue. Nunc eget mollis dui. Maecenas id tincidunt odio, non varius nunc. Pellentesque elementum porttitor velit. Sed sollicitudin non nibh eget sodales.</p>
+					</div><!--main-container-inner-->
+				</div><!--section-->
+				
+				<img src="img/ad-phrenology-mobile.gif" class="ad-mobile" alt="Sponsored Content">
+
+				<a name="faq"></a>
+    		<div class="section">
+					<img src="img/headers/header-faq.png" class="header header-faq" alt="FAQ">
+					<div class="main-container-inner">
+						<p class="faq-header">Can I invite my friends/lovers/enemies?</p>
+						<p class="faq-item">Yes! Feel free to share this page with anyone you want to invite (no cops though). When they <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5P_hLTgtrSssv1r2vqmxZJsb7wu-nnb78vHBBH_haFgh4hA/viewform">book their ticket</a>, we&rsquo;ll ask for the name of the person who referred them.</p>
+						<p class="faq-header">Can I get a cheaper ticket if I can only come for two days?</p>
+						<p class="faq-item">Nah. Since most of our costs are fixed, they wouldn&rsquo;t have been much cheaper, and it wasn&rsquo;t worth the extra logistics. If you can only make it for two days, consider the extra $25 a donation to the Funopticon general fund&mdash;or an option to come for all three days at the last minute.</p>
+						<p class="faq-header">Is this really the last one?</p>
+						<p class="faq-item">It&rsquo;s official this time&mdash;this is the last Funopticon. (At least until we do another one in fifteen years and all bring our kids.) Better for a party to end a little too early than for it to go on a little too long!</p>
+						<p class="faq-header">Is Funopticon a profit-making enterprise? How do I invest?</p>
+						<p class="faq-item">We haven&rsquo;t made any money on this yet (in fact we actually lost money in 2019), but third time&rsquo;s the charm!</p>
+						<p class="faq-header">Any updates on Tim&rsquo;s totally real brain injury?</p>
+						<p class="faq-item">As you may recall, due to a freak pooping accident in 2020, original Funopticon co-planner Tim Dingman sustained a brain injury that caused him to lose the ability to plan Funopticon, while retaining all other functionality.</p>
+						<p>Medical experts from around the globe continue their desperate search for a cure. So far, none has been found. New evidence points to a connection with Havana Syndrome, Munchausen by Proxy, and PGADS.</p>
+					</div><!--main-container-inner-->
+					
+					<img src="img/logo-spin.gif" class="logo-spin">
+					
+				</div><!--section-->
+				
+				
+    	</div><!--main-container-->
+  
+    </div><!--main-->
+  </body>
+</html>
+
+<script>
+	// smooth scroll
+	// Select all links with hashes
+	$('a[href*="#"]')
+		// Remove links that don't actually link to anything
+		.not('[href="#"]')
+		.not('[href="#0"]')
+		.click(function(event) {
+			// On-page links
+			if (
+				location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+				&& 
+				location.hostname == this.hostname
+			) {
+				// Figure out element to scroll to
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+				// Does a scroll target exist?
+				if (target.length) {
+					// Only prevent default if animation is actually gonna happen
+					event.preventDefault();
+					$('html, body').animate({
+						scrollTop: target.offset().top
+					}, 400, function() {
+						// Callback after animation
+						// Must change focus!
+						var $target = $(target);
+						$target.focus();
+						if ($target.is(":focus")) { // Checking if the target was focused
+							return false;
+						} else {
+							$target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+							$target.focus(); // Set focus again
+						};
+					});
+				}
+			}
+		});
+	</script>

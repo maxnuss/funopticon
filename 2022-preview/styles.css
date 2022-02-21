@@ -1,0 +1,781 @@
+body {
+	background-image: url('img/bg.jpg?v=13');
+	background-size: 350px auto;
+	font-family: 'DM Sans', sans-serif;
+}
+
+body.no-ads .ad {
+	display: none !important;
+}
+
+::selection {
+	background: #E65F5C;
+	color: white;
+}
+
+p {
+	position: relative;
+}
+
+a {
+	color: #0C7C59;
+	text-decoration: none;
+	position: relative;
+  transition: all .2s ease;
+  z-index: 1;
+  border-bottom: 1px dotted #97a00d;
+}
+
+a:hover {
+	color: #982649;
+	border-bottom: 1px dotted #a00d0d;
+}
+
+.ad-bloomberg {
+	width: 308px;
+	height: 298px;
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+	background: white;
+	border: 1px solid black;
+	z-index: 100;
+	display: none;
+	box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.1);
+}
+
+.ad-bloomberg img {
+	width: 300px;
+	display: block;
+	margin: 3px auto;
+}
+
+.ad-hair {
+	width: 358px;
+	height: 326px;
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+	background: white;
+	border: 1px solid black;
+	z-index: 100;
+	display: none;
+	box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.1);
+}
+
+.ad-hair img {
+	width: 350px;
+	display: block;
+	margin: 3px auto;
+}
+
+.ad-close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	cursor: pointer;
+	z-index: 10;
+}
+
+.ad-close:hover {
+	color: #fff;
+}
+
+.ad-bible {
+	width: 308px;
+	height: 483px;
+	position: fixed;
+	left: 100px;
+	top: 50px;
+	background: white;
+	border: 1px solid black;
+	z-index: 101;
+	display: none;
+	box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.1);
+}
+
+.ad-bible img {
+	width: 300px;
+	display: block;
+	margin: 3px auto;
+}
+
+.ad-plants {
+	width: 308px;
+	height: 483px;
+	position: fixed;
+	left: 100px;
+	top: 50px;
+	background: white;
+	border: 1px solid black;
+	z-index: 101;
+	display: none;
+	box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.1);
+}
+
+.ad-plants img {
+	width: 300px;
+	display: block;
+	margin: 3px auto;
+}
+
+.ad-meat {
+	width: 708px;
+	height: 300px;
+	position: fixed;
+	left: 50%;
+	margin-left: -254px;
+	top: 10px;
+	background: white;
+	border: 1px solid black;
+	z-index: 102;
+	display: none;
+	box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.1);
+}
+
+.ad-meat img {
+	width: 700px;
+	display: block;
+	margin: 3px auto;
+}
+
+.ad-dew {
+	width: 708px;
+	height: 300px;
+	position: fixed;
+	left: 50%;
+	margin-left: -354px;
+	top: 30px;
+	background: white;
+	border: 1px solid black;
+	z-index: 102;
+	display: none;
+	box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.1);
+}
+
+.ad-dew img {
+	width: 700px;
+	display: block;
+	margin: 3px auto;
+}
+
+.ad-phrenology {
+	width: 358px;
+	height: 475px;
+	position: fixed;
+	bottom: 10px;
+	right: -500px;
+	background: white;
+	border: 1px solid black;
+	z-index: 103;
+	transition: all .2s ease;
+	box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.1);
+	overflow: hidden;
+}
+
+.ad-phrenology img {
+	width: 350px;
+	display: block;
+	margin: 3px auto;
+}
+
+.ad-telepathy {
+	width: 358px;
+	height: 475px;
+	position: fixed;
+	bottom: 10px;
+	right: -500px;
+	background: white;
+	border: 1px solid black;
+	z-index: 103;
+	transition: all .2s ease;
+	box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.1);
+	overflow: hidden;
+}
+
+.ad-telepathy img {
+	width: 350px;
+	display: block;
+	margin: 3px auto;
+}
+
+.ad-pets {
+	width: 858px;
+	height: 221px;
+	position: fixed;
+	top: -300px;
+	left: 20%;
+	background: white;
+	border: 1px solid black;
+	z-index: 104;
+	transition: all .2s ease;
+	box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.1);
+}
+
+.ad-pets img {
+	width: 850px;
+	display: block;
+	margin: 3px auto;
+}
+
+.ad-bird {
+	width: 408px;
+	height: 341px;
+	position: fixed;
+	top: -1000px;
+	left: 40%;
+	margin-left: -204px;
+	background: white;
+	border: 1px solid black;
+	z-index: 104;
+	transition: all .2s ease;
+	box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.1);
+}
+
+.ad-bird img {
+	width: 400px;
+	display: block;
+	margin: 3px auto;
+}
+
+.ad-snake-oil,
+.ad-bugspray {
+	width: 548px;
+	height: 428px;
+	position: fixed;
+	bottom: -1000px;
+	left: 58%;
+	margin-left: -270px;
+	background: white;
+	border: 1px solid black;
+	z-index: 105;
+	transition: all .2s ease;
+	box-shadow: 3px 3px 3px 3px rgba(0,0,0,0.1);
+}
+
+.ad-snake-oil img,
+.ad-bugspray img {
+	width: 540px;
+	display: block;
+	margin: 3px auto;
+}
+
+.ad-pets .ad-close,
+.ad-bird .ad-close {
+	color: #fff;
+}
+
+.ad-pets .ad-close:hover {
+	color: #444;
+}
+
+.main {
+	width: 1100px;
+	max-width: 90%;
+	margin: 30px auto;
+	background: #fafafa;
+	padding: 30px 10px;
+	border: 1px solid black;
+	min-height: 1200px;
+	border-radius: 4px;
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.4);
+	position: relative;
+}
+
+.logo {
+	display: block;
+	margin: 0 auto;
+	width: 200px;
+}
+
+.logotype {
+	display: block;
+	margin: 20px auto 0;
+	width: 400px;
+}
+
+.nav-container {
+	margin: 50px auto;
+	text-align: center;
+}
+
+a.nav {
+	background-position: top center;
+	background-size: 100%;
+	border: none;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 0 16px;
+	border-bottom: 0;
+	transition: none;
+}
+
+.nav:hover {
+	background-position: bottom center;
+}
+
+.nav-about {
+	width: 93px;
+	height: 40px;
+	background-image: url('img/nav/nav-about.png');
+}
+
+.nav-where-when {
+	width: 202px;
+	height: 24px;
+	background-image: url('img/nav/nav-where-when.png');
+	margin-left: 0;
+}
+
+a.nav-where-when {
+	margin-left: 0 !important;
+}
+
+.nav-values {
+	width: 100px;
+	height: 62px;
+	background-image: url('img/nav/nav-values.png');
+}
+
+.nav-tickets {
+	width: 120px;
+	height: 35px;
+	background-image: url('img/nav/nav-tickets.png');
+}
+
+.nav-organizers {
+	width: 138px;
+	height: 32px;
+	background-image: url('img/nav/nav-organizers.png');
+}
+
+.nav-faq {
+	width: 85px;
+	height: 60px;
+	background-image: url('img/nav/nav-faq.png');
+}
+
+.memories {
+	display: block;
+	margin: 30px auto;
+	max-width: 95%;
+	width: 600px;
+}
+
+.ad-columns {
+	display: block;
+	position: absolute;
+	border: 1px solid black;
+	width: 200px;
+}
+
+.ad-columns:hover {
+	border: 1px solid black;
+}
+
+.ad-columns-left {
+	left: 20px;
+}
+
+.ad-columns-left--alt {
+	right: 20px;
+	left: auto;
+}
+
+.ad-columns-right {
+	right: 20px;
+}
+
+.ad-columns-right--alt {
+	left: 20px;
+	right: auto;
+}
+
+.ad-columns-1 {
+	top: 520px;
+}
+
+.ad-columns-2 {
+	top: 1070px;
+}
+
+.ad-columns-3 {
+	top: 1610px;
+}
+
+.ad-columns-4 {
+	top: 2160px;
+}
+
+.ad-columns-5 {
+	top: 2700px;
+}
+
+.ad-columns-6 {
+	top: 3250px;
+}
+
+.ad-columns-7 {
+	top: 3800px;
+}
+
+.ad-columns img {
+	width: 200px;
+	margin-bottom: -5px;
+}
+
+.small {
+	font-size: 0.9rem;
+	color: #444444;
+}
+
+.section {
+	margin: 40px 0 80px;
+}
+
+.section:last-child {
+	margin-bottom: 20px;
+}
+
+.main-container {
+	margin: 0 auto;
+	width: 600px;
+	max-width: 100%;
+	min-height: 100px;
+	font-size: 1.12rem;
+	line-height: 1.5;
+}
+
+.main-container-inner {
+	margin: 0 auto;
+	max-width: 100%;
+	width: 550px;
+}
+
+.header {
+	display: block;
+	width: 250px;
+	margin: 30px auto;
+	max-width: 95%;
+}
+
+.chart {
+	display: block;
+	margin: 30px auto;
+	max-width: 90%;
+	width: 450px;
+	background: #fff;
+	padding: 15px;
+	border: 1px solid #989898;
+}
+
+.paren {
+	color: #745f82;
+}
+
+.header-when-where {
+	width: 350px;
+}
+
+.header-values {
+	width: 450px;
+}
+
+.values-grid {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-gap: 50px;
+	margin-top: 40px;
+}
+
+.values-grid-value {
+	text-align: center;
+}
+
+.values-grid-value img {
+	display: block;
+	margin: 0 auto;
+	width: 75%;
+	min-height: 100px;
+}
+
+.values-grid-value h3 {
+	color: #0e531e;
+	margin: 0 auto 10px;
+	max-width: 240px;
+	font-family: 'Work Sans';
+}
+
+.values-grid-value:nth-child(2) h3 {
+	color: #53280e;
+}
+
+.values-grid-value:nth-child(3) h3 {
+	color: #530e0e;
+}
+
+.values-grid-value:nth-child(4) h3 {
+	color: #0e3b53;
+}
+
+.values-grid-value p {
+	margin: 0;
+}
+
+.values-grid-value h3.make-myths {
+	max-width: 100px;
+	margin: 0 auto;
+}
+
+.values-grid-value h3.request-enthusiasm {
+	max-width: 200px;
+	margin: 0 auto;
+}
+
+
+.discount-tickets {
+	font-size: 0.9rem;
+	color: #444444;
+	text-align: center;
+	max-width: 400px;
+	margin: 0 auto;
+}
+
+.buy-tickets {
+	text-indent: -9000px;
+	display: block;
+	margin: 20px auto;
+	background-image: url('img/buy-tickets.gif');
+	background-size: 100%;
+	background-position: top center;
+	width: 255px;
+	height: 46px;
+	border: 0;
+	text-decoration: none;
+	transition: none;
+}
+
+.buy-tickets:hover {
+	text-decoration: none;
+	background-position: bottom center;
+	border: 0;
+}
+
+.header-organizers {
+	width: 350px;
+}
+
+.header-faq {
+	width: 200px;
+}
+
+.faq-header {
+	margin-bottom: 5px;
+	font-family: 'Work Sans';
+	font-weight: 800;
+	font-size: 1.17rem;
+	color: #3555b0;
+}
+
+.faq-item {
+	margin-top: 0;
+}
+
+.logo-spin {
+	display: block;
+	margin: 20px auto 0;
+	width: 80px;
+}
+
+.ad-mobile {
+	display: none;
+}
+
+@media (max-width: 1130px) {
+	.ad-columns-left {
+		display: none;
+	}
+	
+	.main-container {
+		margin: 0;
+	}
+	
+	a.nav {
+		margin: 0 10px;
+	}
+	
+	.nav-about {
+		width: 70px;
+		height: 30px;
+	}
+
+	.nav-where-when {
+		width: 150px;
+		height: 18px;
+	}
+	
+	.nav-values {
+		width: 73px;
+		height: 45px;
+	}
+	
+	.nav-tickets {
+		width: 80px;
+		height: 23px;
+	}
+	
+	.nav-organizers {
+		width: 100px;
+		height: 23px;
+	}
+	
+	.nav-faq {
+		width: 50px;
+		height: 35px;
+	}
+	
+	.ad-dew {
+		width: 550px;
+		height: 233px;
+		margin-left: -200px;
+	}
+	
+	.ad-dew img {
+		width: 545px;
+	}
+	
+	.ad-telepathy,
+	.ad-phrenology {
+		width: 270px;
+		height: 348px;
+	}
+	
+	.ad-telepathy img,
+	.ad-phrenology img {
+		width: 265px;
+	}
+	
+	.ad-pets {
+		width: 740px;
+		height: 191px;
+	}
+	
+	.ad-pets img {
+		width: 735px;
+	}
+}
+
+@media (max-width: 900px) {
+	.main-container,
+	.main-container-inner {
+		max-width: 400px;
+	}
+}
+
+@media (max-width: 750px) {
+	.nav-about {
+		width: 50px;
+		height: 21px;
+	}
+	
+	.nav-where-when {
+		width: 135px;
+		height: 16px;
+	}
+	
+	.nav-values {
+		width: 58px;
+		height: 36px;
+	}
+	
+	.nav-tickets {
+		width: 63px;
+		height: 18px;
+	}
+	
+	.nav-organizers {
+		width: 80px;
+		height: 18px;
+	}
+	
+	.nav-faq {
+		width: 40px;
+		height: 28px;
+	}
+}
+
+@media (max-width: 700px) {
+	.section {
+		margin: 60px 0;
+	}
+	
+	.ad-mobile {
+		display: block;
+		width: 100%;
+		max-width: 350px;
+		margin: 0 auto;
+		border: 1px solid #989898;
+	}
+
+	.ad-columns-right {
+		display: none;
+	}
+	
+	.main-container {
+		margin: 0 auto;
+		max-width: 95%;
+	}
+	
+	.main-container-inner {
+		max-width: 95%;
+	}
+	
+	.logo {
+		width: 150px;
+	}
+	
+	.logotype {
+		width: 250px;
+	}
+	
+	.ad-bible {
+		left: 40px;
+	}
+	
+	.ad-plants {
+		left: 50px;
+	}
+	
+	.ad-telepathy,
+	.ad-phrenology {
+		bottom: 30px;
+	}
+	
+	.ad-bird {
+		width: 220px;
+		height: 184px;
+		margin-left: -110px;
+	}
+	
+	.ad-bird img {
+		width: 215px;
+	}
+
+	.ad-pets,
+	.ad-dew,
+	.ad-meat,
+	.ad-snake-oil,
+	.ad-bugspray {
+		display: none !important;
+	}
+	
+	.ad-close {
+		font-size: 1.5rem;
+	}
+}
+
+@media (max-width: 650px) {
+	a.nav {
+		margin: 6px 10px;
+	}
+}
