@@ -303,57 +303,67 @@
 					<div class="main-container-inner">
 						<img src="" class="organizer-image">
 						<div class="mad-libs">
-							<img src="img/refresh.gif" alt="Refresh for more" class="refresh">
 							Max, Alex, and Caroline met in <span class="mad-libs-box mad-libs-box--place"></span> in <span class="mad-libs-box mad-libs-box--year"></span><span class="small-space"></span>, after being introduced by <span class="mad-libs-box mad-libs-box--celebrity"></span><span class="small-space"></span>. They first bonded over a meal of <span class="mad-libs-box mad-libs-box--food"></span><span class="small-space"></span>, where they discussed their shared love of <span class="mad-libs-box mad-libs-box--plural-noun mad-libs-box--plural-noun-1"></span> and <span class="mad-libs-box mad-libs-box--ing-verb"></span><span class="small-space"></span>. Their favorite parts of Funopticon are the <span class="mad-libs-box mad-libs-box--adjective"></span> <span class="mad-libs-box mad-libs-box--plural-noun mad-libs-box--plural-noun-2"></span> and watching <span class="mad-libs-box mad-libs-box--attendee-name"></span> <span class="mad-libs-box mad-libs-box--verb"></span><span class="small-space"></span>.
 						</div><!--mad-libs-->
+						<div class="refresh-button-container">
+							<button class="refresh-mad-libs">Refresh Mad Libs</button>
+						</div>
 					</div><!--main-container-inner-->
 				</div><!--section-->
 				
 <script>
 $(document).ready(function(){
-	var organizerImages = ['img/organizers/allies.png', 'img/organizers/stooges.jpg', 'img/organizers/olsens.jpg', 'img/organizers/hogwarts.jpg', 'img/organizers/destiny.jpg', 'img/organizers/jonas.png', 'img/organizers/powerpuff.jpg', 'img/organizers/baudelaires.jpg', 'img/organizers/matrix.jpg', 'img/organizers/eds.jpg', 'img/organizers/plastics.jpg', 'img/organizers/shrek.jpg'];
-	var organizerImage = organizerImages[Math.floor(Math.random() * organizerImages.length)];
-	$('.organizer-image').attr('src', organizerImage);
-
-	var places = ['Florida', 'Syria', 'chess club', 'Bible Study', 'debtors\' prison', 'the Austro-Hungarian Empire', 'Alex\'s imagination', 'space', 'the woods', 'a hot tub', 'the Library of Alexandria'];
-	var place = places[Math.floor(Math.random() * places.length)];
-	$('.mad-libs-box--place').text(place);
+	fillMadLibs();
 	
-	var years = ['1776', '1984', 'the Year of the Chewable Ambien Tab', '44 BC', '1968', '2001'];
-	var year = years[Math.floor(Math.random() * years.length)];
-	$('.mad-libs-box--year').text(year);
-	
-	var celebrities = ['Martha Stewart', 'Snoop Dogg', 'Gerald Ford', 'Mischa Barton', 'the Situation', 'Alex\'s parents', 'Soulja Boy', 'Suge Knight', 'Lil Dicky', 'Carson Daly', 'Jean-Michael Basquiat', 'Dolly Parton', 'Missy Elliott', 'Dwayne "The Rock" Johnson', 'Whoopi Goldberg'];
-	var celebrity = celebrities[Math.floor(Math.random() * celebrities.length)];
-	$('.mad-libs-box--celebrity').text(celebrity);
-	
-	var foods = ['tinned fish', 'ortolan', 'nothing but air', 'head cheese', 'shark fin soup', '100 McNuggets', 'puffer fish', 'imitation crab', 'beached whale', 'Guy Fieri delicacies', 'pickled alligator', 'shrimp pot pie,', 'edible underwear', 'flavored condoms'];
-	var food = foods[Math.floor(Math.random() * foods.length)];
-	$('.mad-libs-box--food').text(food);
-	
-	var pluralNouns = ['chairs', 'pizzerias', 'wombats', 'earwax removal devices', 'charcuterie boards', 'conspiracy theories', 'LaserDiscs', 'Nativity scenes', 'totalitarian societies', 'propaganda posters', 'Death Cab for Cutie cover bands', 'shovels', 'earthquakes', 'diplomats', 'fight clubs', 'chew toys', 'rules', 'handshakes', 'lip ring', 'poison', 'country clubs', 'printing presses'];
-	var pluralNoun1 = pluralNouns[Math.floor(Math.random() * pluralNouns.length)];
-	$('.mad-libs-box--plural-noun-1').text(pluralNoun1);
-	
-	var ingVerbs = ['lucid dreaming', 'French kissing', 'apple picking', 'quilting', 'underwater basket weaving', 'soap carving', 'cockfighting', 'competitive goat herding', 'sleepwalking', 'performing magic', 'stealing', 'freestyle rapping'];
-	var ingVerb = ingVerbs[Math.floor(Math.random() * ingVerbs.length)];
-	$('.mad-libs-box--ing-verb').text(ingVerb);
-	
-	var adjectives = ['mysterious', 'problematic', 'pornographic', 'cubist', 'perplexing', 'overeager', 'dangerous', 'inspirational', 'totalitarian', 'desperate', 'homely', 'old-fashioned', 'wide-eyed', 'colossal', 'mushy', 'tasteless'];
-	var adjective = adjectives[Math.floor(Math.random() * adjectives.length)];
-	$('.mad-libs-box--adjective').text(adjective);
-	
-	var pluralNoun2 = pluralNouns[Math.floor(Math.random() * pluralNouns.length)];
-	$('.mad-libs-box--plural-noun-2').text(pluralNoun2);
-	
-	var attendees = ['Alex Brody', 'Alex Persky-Stern', 'Ali Barton', 'Amanda Weeks', 'Anita Tung', 'Audree Anid', 'Barry Conrad', 'Beatriz Aparicio', 'Bobby Brennan', 'Bora Kim', 'Caroline Eisenmann', 'Cella Jones', 'Chelsea Macco', 'Christina Stead', 'Colin McSwiggen', 'Dan McCormack', 'Emily Schlossman', 'Ethan Carlson', 'Gabriel Flateman', 'Gianna Marx', 'Grace Ross', 'Hong Kim', 'Jack Docal', 'Jack Jester-Weinstein', 'Jessica Clark', 'Jill Adler', 'Joan DeGennaro', 'Josh Levine', 'Jules Emmanuelli', 'Julian Freed-Brown', 'Kalina Jordanova', 'Katherine Yagle', 'Keldin Sergheyev', 'Kelsey Vela', 'Laura Berk', 'Laura Carlson', 'Lily Olson', 'Liz Permenter', 'Mai-Thy Vuong', 'Marley Ward', 'Matt Cashman', 'Mattan Griffel', 'Michael Jaja', 'Mike Wilner', 'Monica Rocha', 'Moss Amer', 'Natalie Samuels', 'Neil Shah', 'Nick Roopenian', 'Olivia Swomley', 'Peter DiPrinzio', 'Rachel Drapper', 'Rio Yamamoto', 'Ryan Merlini ', 'Sage Wright', 'Sean Pennino', 'Simone Paasche', 'Tess Crain', 'Tory Pratt', 'Tyler Tsugita', 'Will Durney'];
-	var attendee = attendees[Math.floor(Math.random() * attendees.length)];
-	$('.mad-libs-box--attendee-name').text(attendee);
-	
-	var verbs = ['collapse', 'explode', 'embarrass themselves', 'experience ego death', 'pray', 'perspire', 'equivocate', 'become permanently disfigured', 'go into crushing debt', 'pleasure themselves', 'cry', 'call their mom', 'strip'];
-	var verb = verbs[Math.floor(Math.random() * verbs.length)];
-	$('.mad-libs-box--verb').text(verb);
+	$('.refresh-mad-libs').click(function(){
+		fillMadLibs();
+	});
 });
+
+	function fillMadLibs() {
+		var organizerImages = ['img/organizers/allies.png', 'img/organizers/stooges.jpg', 'img/organizers/olsens.jpg', 'img/organizers/hogwarts.jpg', 'img/organizers/destiny.jpg', 'img/organizers/jonas.png', 'img/organizers/powerpuff.jpg', 'img/organizers/baudelaires.jpg', 'img/organizers/matrix.jpg', 'img/organizers/eds.jpg', 'img/organizers/plastics.jpg', 'img/organizers/shrek.jpg'];
+		var organizerImage = organizerImages[Math.floor(Math.random() * organizerImages.length)];
+		$('.organizer-image').attr('src', organizerImage);
+
+		var places = ['Florida', 'Syria', 'chess club', 'Bible Study', 'debtors\' prison', 'the Austro-Hungarian Empire', 'Alex\'s imagination', 'space', 'the woods', 'a hot tub', 'the Library of Alexandria'];
+		var place = places[Math.floor(Math.random() * places.length)];
+		$('.mad-libs-box--place').text(place);
+	
+		var years = ['1776', '1984', 'the Year of the Chewable Ambien Tab', '44 BC', '1968', '2001'];
+		var year = years[Math.floor(Math.random() * years.length)];
+		$('.mad-libs-box--year').text(year);
+	
+		var celebrities = ['Martha Stewart', 'Snoop Dogg', 'Gerald Ford', 'Mischa Barton', 'the Situation', 'Alex\'s parents', 'Soulja Boy', 'Suge Knight', 'Lil Dicky', 'Carson Daly', 'Jean-Michael Basquiat', 'Dolly Parton', 'Missy Elliott', 'Dwayne "The Rock" Johnson', 'Whoopi Goldberg'];
+		var celebrity = celebrities[Math.floor(Math.random() * celebrities.length)];
+		$('.mad-libs-box--celebrity').text(celebrity);
+	
+		var foods = ['tinned fish', 'ortolan', 'nothing but air', 'head cheese', 'shark fin soup', '100 McNuggets', 'puffer fish', 'imitation crab', 'beached whale', 'Guy Fieri delicacies', 'pickled alligator', 'shrimp pot pie,', 'edible underwear', 'flavored condoms'];
+		var food = foods[Math.floor(Math.random() * foods.length)];
+		$('.mad-libs-box--food').text(food);
+	
+		var pluralNouns = ['chairs', 'pizzerias', 'wombats', 'earwax removal devices', 'charcuterie boards', 'conspiracy theories', 'LaserDiscs', 'Nativity scenes', 'totalitarian societies', 'propaganda posters', 'Death Cab for Cutie cover bands', 'shovels', 'earthquakes', 'diplomats', 'fight clubs', 'chew toys', 'rules', 'handshakes', 'lip ring', 'poison', 'country clubs', 'printing presses'];
+		var pluralNoun1 = pluralNouns[Math.floor(Math.random() * pluralNouns.length)];
+		$('.mad-libs-box--plural-noun-1').text(pluralNoun1);
+	
+		var ingVerbs = ['lucid dreaming', 'French kissing', 'apple picking', 'quilting', 'underwater basket weaving', 'soap carving', 'cockfighting', 'competitive goat herding', 'sleepwalking', 'performing magic', 'stealing', 'freestyle rapping'];
+		var ingVerb = ingVerbs[Math.floor(Math.random() * ingVerbs.length)];
+		$('.mad-libs-box--ing-verb').text(ingVerb);
+	
+		var adjectives = ['mysterious', 'problematic', 'pornographic', 'cubist', 'perplexing', 'overeager', 'dangerous', 'inspirational', 'totalitarian', 'desperate', 'homely', 'old-fashioned', 'wide-eyed', 'colossal', 'mushy', 'tasteless'];
+		var adjective = adjectives[Math.floor(Math.random() * adjectives.length)];
+		$('.mad-libs-box--adjective').text(adjective);
+	
+		var pluralNoun2 = pluralNouns[Math.floor(Math.random() * pluralNouns.length)];
+		$('.mad-libs-box--plural-noun-2').text(pluralNoun2);
+	
+		var attendees = ['Alex Brody', 'Alex Persky-Stern', 'Ali Barton', 'Amanda Weeks', 'Anita Tung', 'Audree Anid', 'Barry Conrad', 'Beatriz Aparicio', 'Bobby Brennan', 'Bora Kim', 'Caroline Eisenmann', 'Cella Jones', 'Chelsea Macco', 'Christina Stead', 'Colin McSwiggen', 'Dan McCormack', 'Emily Schlossman', 'Ethan Carlson', 'Gabriel Flateman', 'Gianna Marx', 'Grace Ross', 'Hong Kim', 'Jack Docal', 'Jack Jester-Weinstein', 'Jessica Clark', 'Jill Adler', 'Joan DeGennaro', 'Josh Levine', 'Jules Emmanuelli', 'Julian Freed-Brown', 'Kalina Jordanova', 'Katherine Yagle', 'Keldin Sergheyev', 'Kelsey Vela', 'Laura Berk', 'Laura Carlson', 'Lily Olson', 'Liz Permenter', 'Mai-Thy Vuong', 'Marley Ward', 'Matt Cashman', 'Mattan Griffel', 'Michael Jaja', 'Mike Wilner', 'Monica Rocha', 'Moss Amer', 'Natalie Samuels', 'Neil Shah', 'Nick Roopenian', 'Olivia Swomley', 'Peter DiPrinzio', 'Rachel Drapper', 'Rio Yamamoto', 'Ryan Merlini ', 'Sage Wright', 'Sean Pennino', 'Simone Paasche', 'Tess Crain', 'Tory Pratt', 'Tyler Tsugita', 'Will Durney'];
+		var attendee = attendees[Math.floor(Math.random() * attendees.length)];
+		$('.mad-libs-box--attendee-name').text(attendee);
+	
+		var verbs = ['collapse', 'explode', 'embarrass themselves', 'experience ego death', 'pray', 'perspire', 'equivocate', 'become permanently disfigured', 'go into crushing debt', 'pleasure themselves', 'cry', 'call their mom', 'strip'];
+		var verb = verbs[Math.floor(Math.random() * verbs.length)];
+		$('.mad-libs-box--verb').text(verb);
+	}
 </script>
 				
 				<img src="img/phrenology-mobile.gif" class="ad-mobile" alt="Sponsored Content">

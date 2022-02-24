@@ -575,16 +575,38 @@ a.nav-where-when {
 .mad-libs {
 	line-height: 45px;
 	position: relative;
-	padding-bottom: 40px;
 }
 
-.refresh {
+.refresh-button-container {
+	height: 50px;
+	margin-top: 10px;
+}
+
+.refresh-mad-libs {
 	display: block;
-	position: absolute;
-	bottom: 20px;
-	right: -20px;
-	transform: rotate(-10deg);
-	width: 180px;
+	margin: 0 auto;
+	background: #ff97ef;
+	border: 0;
+	border-radius: 12px;
+	border-bottom: 5px solid #a52491;
+	font-size: 1.1rem;
+	padding: 8px 16px;
+	font-family: 'Comic Sans MS', 'Comic Sans';
+	cursor: pointer;
+	position: relative;
+	top: 0;
+	color: #480b3f;
+}
+
+.refresh-mad-libs:hover {
+	border-bottom: 4px solid #a52491;
+	top: 2px;
+}
+
+.refresh-mad-libs:active {
+	border-bottom: 1px solid #a52491;
+	top: 4px;
+	background: #fcb3f1;
 }
 
 .mad-libs-box {
