@@ -7,7 +7,7 @@
     <link rel="icon" href="favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Work+Sans:ital,wght@0,300;0,800;1,400&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Work+Sans:ital,wght@0,300;0,800;1,400&display=swap&family=Permanent+Marker" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
     <link rel="stylesheet" href="styles.css">
@@ -122,9 +122,11 @@
 			var leftRightRandom = Math.floor(Math.random() * 2);
 			console.log(leftRightRandom);
 
-			if (leftRightRandom == 1) {
-				$('.ad-columns-left').addClass('ad-columns-left--alt');
-				$('.ad-columns-right').addClass('ad-columns-right--alt');
+			if (window.width > 1130) {
+				if (leftRightRandom == 1) {
+					$('.ad-columns-left').addClass('ad-columns-left--alt');
+					$('.ad-columns-right').addClass('ad-columns-right--alt');
+				}
 			}
 								 
 			$('.ad-close').click(function(){
@@ -244,8 +246,8 @@
 					<div class="main-container-inner">
 						<p>Funopticons 2022 is August 25&ndash;28 at <a href="https://www.google.com/maps/place/Berkshire+Hills+Eisenberg+Camp/@42.0793435,-73.5763244,17z/data=!3m1!4b1!4m5!3m4!1s0x89dd84170549c63b:0x15905cc32f34f77c!8m2!3d42.0793395!4d-73.5741357?shorturl=1">Berkshire Hills Eisenberg Camp</a> (the same place as last year).</p>
 						<p>The camp is around a three hour drive from New York City, and roughly one hour from the Albany airport. We&rsquo;ll collect transportation info from everyone attending and help coordinate carpools.</p>
-						<p>You are welcome to arrive anytime after 3pm EST on Thursday <span class="paren">(8/25)</span>. The camp will serve dinner on Thursday around 7pm.</p>
-						<p>The opening ceremony is at 4pm on Friday <span class="paren">(8/26)</span>. <strong>The opening ceremony is mandatory</strong>, so when making travel plans, make sure you can arrive by then.</p>
+						<p>You are welcome to arrive anytime after 3pm EST on Thursday <span class="paren">(8/25)</span>. Dinner will be served on Thursday at 7pm. We have something special planned for Thursday evening, so we highly recommend arriving by then.</p>
+						<p>The opening ceremony is at 4pm on Friday <span class="paren">(8/26)</span>. <strong>The opening ceremony is mandatory</strong>, so when making travel plans, make sure you can arrive by then at the absolute latest.</p>
 						<p>Check-out time is 11am Sunday <span class="paren">(8/28)</span>. Formal programming will end on Saturday night, though there will be breakfast served on Sunday morning.</p>
 					</div><!--main-container-inner-->
 				</div><!--section-->
@@ -299,9 +301,60 @@
     		<div class="section">
 					<img src="img/headers/header-organizers.png" class="header header-organizers" alt="About the Organizers">
 					<div class="main-container-inner">
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin in sapien magna. Morbi sodales maximus lectus. Aenean nisi ex, commodo et enim sit amet, fringilla viverra odio. Phasellus aliquet ultricies suscipit. Nunc ultricies arcu in tempor congue. Nunc eget mollis dui. Maecenas id tincidunt odio, non varius nunc. Pellentesque elementum porttitor velit. Sed sollicitudin non nibh eget sodales.</p>
+						<img src="" class="organizer-image">
+						<div class="mad-libs">
+							<img src="img/refresh.gif" alt="Refresh for more" class="refresh">
+							Max, Alex, and Caroline met in <span class="mad-libs-box mad-libs-box--place"></span> in <span class="mad-libs-box mad-libs-box--year"></span><span class="small-space"></span>, after being introduced by <span class="mad-libs-box mad-libs-box--celebrity"></span><span class="small-space"></span>. They first bonded over a meal of <span class="mad-libs-box mad-libs-box--food"></span><span class="small-space"></span>, where they discussed their shared love of <span class="mad-libs-box mad-libs-box--plural-noun mad-libs-box--plural-noun-1"></span> and <span class="mad-libs-box mad-libs-box--ing-verb"></span><span class="small-space"></span>. Their favorite parts of Funopticon are the <span class="mad-libs-box mad-libs-box--adjective"></span> <span class="mad-libs-box mad-libs-box--plural-noun mad-libs-box--plural-noun-2"></span> and watching <span class="mad-libs-box mad-libs-box--attendee-name"></span> <span class="mad-libs-box mad-libs-box--verb"></span><span class="small-space"></span>.
+						</div><!--mad-libs-->
 					</div><!--main-container-inner-->
 				</div><!--section-->
+				
+<script>
+$(document).ready(function(){
+	var organizerImages = ['img/organizers/allies.png', 'img/organizers/stooges.jpg', 'img/organizers/olsens.jpg', 'img/organizers/hogwarts.jpg', 'img/organizers/destiny.jpg', 'img/organizers/jonas.png', 'img/organizers/powerpuff.jpg', 'img/organizers/baudelaires.jpg', 'img/organizers/matrix.jpg', 'img/organizers/eds.jpg', 'img/organizers/plastics.jpg', 'img/organizers/shrek.jpg'];
+	var organizerImage = organizerImages[Math.floor(Math.random() * organizerImages.length)];
+	$('.organizer-image').attr('src', organizerImage);
+
+	var places = ['Florida', 'Syria', 'chess club', 'Bible Study', 'debtors\' prison', 'the Austro-Hungarian Empire', 'Alex\'s imagination', 'space', 'the woods', 'a hot tub', 'the Library of Alexandria'];
+	var place = places[Math.floor(Math.random() * places.length)];
+	$('.mad-libs-box--place').text(place);
+	
+	var years = ['1776', '1984', 'the Year of the Chewable Ambien Tab', '44 BC', '1968', '2001'];
+	var year = years[Math.floor(Math.random() * years.length)];
+	$('.mad-libs-box--year').text(year);
+	
+	var celebrities = ['Martha Stewart', 'Snoop Dogg', 'Gerald Ford', 'Mischa Barton', 'the Situation', 'Alex\'s parents', 'Soulja Boy', 'Suge Knight', 'Lil Dicky', 'Carson Daly', 'Jean-Michael Basquiat', 'Dolly Parton', 'Missy Elliott', 'Dwayne "The Rock" Johnson', 'Whoopi Goldberg'];
+	var celebrity = celebrities[Math.floor(Math.random() * celebrities.length)];
+	$('.mad-libs-box--celebrity').text(celebrity);
+	
+	var foods = ['tinned fish', 'ortolan', 'nothing but air', 'head cheese', 'shark fin soup', '100 McNuggets', 'puffer fish', 'imitation crab', 'beached whale', 'Guy Fieri delicacies', 'pickled alligator', 'shrimp pot pie,', 'edible underwear', 'flavored condoms'];
+	var food = foods[Math.floor(Math.random() * foods.length)];
+	$('.mad-libs-box--food').text(food);
+	
+	var pluralNouns = ['chairs', 'pizzerias', 'wombats', 'earwax removal devices', 'charcuterie boards', 'conspiracy theories', 'LaserDiscs', 'Nativity scenes', 'totalitarian societies', 'propaganda posters', 'Death Cab for Cutie cover bands', 'shovels', 'earthquakes', 'diplomats', 'fight clubs', 'chew toys', 'rules', 'handshakes', 'lip ring', 'poison', 'country clubs', 'printing presses'];
+	var pluralNoun1 = pluralNouns[Math.floor(Math.random() * pluralNouns.length)];
+	$('.mad-libs-box--plural-noun-1').text(pluralNoun1);
+	
+	var ingVerbs = ['lucid dreaming', 'French kissing', 'apple picking', 'quilting', 'underwater basket weaving', 'soap carving', 'cockfighting', 'competitive goat herding', 'sleepwalking', 'performing magic', 'stealing', 'freestyle rapping'];
+	var ingVerb = ingVerbs[Math.floor(Math.random() * ingVerbs.length)];
+	$('.mad-libs-box--ing-verb').text(ingVerb);
+	
+	var adjectives = ['mysterious', 'problematic', 'pornographic', 'cubist', 'perplexing', 'overeager', 'dangerous', 'inspirational', 'totalitarian', 'desperate', 'homely', 'old-fashioned', 'wide-eyed', 'colossal', 'mushy', 'tasteless'];
+	var adjective = adjectives[Math.floor(Math.random() * adjectives.length)];
+	$('.mad-libs-box--adjective').text(adjective);
+	
+	var pluralNoun2 = pluralNouns[Math.floor(Math.random() * pluralNouns.length)];
+	$('.mad-libs-box--plural-noun-2').text(pluralNoun2);
+	
+	var attendees = ['Alex Brody', 'Alex Persky-Stern', 'Ali Barton', 'Amanda Weeks', 'Anita Tung', 'Audree Anid', 'Barry Conrad', 'Beatriz Aparicio', 'Bobby Brennan', 'Bora Kim', 'Caroline Eisenmann', 'Cella Jones', 'Chelsea Macco', 'Christina Stead', 'Colin McSwiggen', 'Dan McCormack', 'Emily Schlossman', 'Ethan Carlson', 'Gabriel Flateman', 'Gianna Marx', 'Grace Ross', 'Hong Kim', 'Jack Docal', 'Jack Jester-Weinstein', 'Jessica Clark', 'Jill Adler', 'Joan DeGennaro', 'Josh Levine', 'Jules Emmanuelli', 'Julian Freed-Brown', 'Kalina Jordanova', 'Katherine Yagle', 'Keldin Sergheyev', 'Kelsey Vela', 'Laura Berk', 'Laura Carlson', 'Lily Olson', 'Liz Permenter', 'Mai-Thy Vuong', 'Marley Ward', 'Matt Cashman', 'Mattan Griffel', 'Michael Jaja', 'Mike Wilner', 'Monica Rocha', 'Moss Amer', 'Natalie Samuels', 'Neil Shah', 'Nick Roopenian', 'Olivia Swomley', 'Peter DiPrinzio', 'Rachel Drapper', 'Rio Yamamoto', 'Ryan Merlini ', 'Sage Wright', 'Sean Pennino', 'Simone Paasche', 'Tess Crain', 'Tory Pratt', 'Tyler Tsugita', 'Will Durney'];
+	var attendee = attendees[Math.floor(Math.random() * attendees.length)];
+	$('.mad-libs-box--attendee-name').text(attendee);
+	
+	var verbs = ['collapse', 'explode', 'embarrass themselves', 'experience ego death', 'pray', 'perspire', 'equivocate', 'become permanently disfigured', 'go into crushing debt', 'pleasure themselves', 'cry', 'call their mom', 'strip'];
+	var verb = verbs[Math.floor(Math.random() * verbs.length)];
+	$('.mad-libs-box--verb').text(verb);
+});
+</script>
 				
 				<img src="img/phrenology-mobile.gif" class="ad-mobile" alt="Sponsored Content">
 
@@ -312,7 +365,8 @@
 						<p class="faq-header">Can I invite my friends/lovers/enemies?</p>
 						<p class="faq-item">Yes! Feel free to share this page with anyone you want to invite (no cops though). When they <a href="https://docs.google.com/forms/d/e/1FAIpQLSe5P_hLTgtrSssv1r2vqmxZJsb7wu-nnb78vHBBH_haFgh4hA/viewform">book their ticket</a>, we&rsquo;ll ask for the name of the person who referred them.</p>
 						<p class="faq-header">Can I get a cheaper ticket if I can only come for two days?</p>
-						<p class="faq-item">Nah. Since most of our costs are fixed, they wouldn&rsquo;t have been much cheaper, and it wasn&rsquo;t worth the extra logistics. If you can only make it for two days, consider the extra $25 a donation to the Funopticon general fund&mdash;or an option to come for all three days at the last minute.</p>
+						<p class="faq-item">Nah. Since most of our costs are fixed, they wouldn&rsquo;t have been much cheaper, and it wasn&rsquo;t worth the extra logistics. If you can only make it for two days, consider the extra $25 a donation to the Funopticon general fund&mdash;or an option to come on Thursday at the last minute.</p>
+						<p>We have something special planned for Thursday evening, so we highly recommend attending for all three days.</p>
 						<p class="faq-header">Is this really the last one?</p>
 						<p class="faq-item">It&rsquo;s official this time&mdash;this is the last Funopticon. (At least until we do another one in fifteen years and all bring our kids.) Better for a party to end a little too early than for it to go on a little too long!</p>
 						<p class="faq-header">Is Funopticon a profit-making enterprise? How do I invest?</p>

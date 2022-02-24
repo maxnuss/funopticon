@@ -532,7 +532,6 @@ a.nav-where-when {
 	margin: 0 auto;
 }
 
-
 .discount-tickets {
 	font-size: 0.9rem;
 	color: #444444;
@@ -563,6 +562,111 @@ a.nav-where-when {
 
 .header-organizers {
 	width: 350px;
+}
+
+.organizer-image {
+	max-width: 90%;
+	width: 400px;
+	display: block;
+	margin: 0 auto 20px;
+	border-radius: 5px;
+}
+
+.mad-libs {
+	line-height: 45px;
+	position: relative;
+	padding-bottom: 40px;
+}
+
+.refresh {
+	display: block;
+	position: absolute;
+	bottom: 20px;
+	right: -20px;
+	transform: rotate(-10deg);
+	width: 180px;
+}
+
+.mad-libs-box {
+	display: inline-block;
+	min-width: 60px;
+	border: 1px solid #aaaaaa;
+	border-radius: 3px;
+	background: #fff;
+	position: relative;
+	top: 0;
+	height: 20px;
+	line-height: 20px;
+	color: #233c84;
+	padding: 0 3px;
+	font-size: 85%;
+}
+
+.mad-libs-box::after {
+	content: '';
+	font-size: 10px;
+	text-transform: uppercase;
+	position: absolute;
+	top: 18px;
+	left: 0;
+	color: #575757;
+	font-family: "Permanent Marker";
+}
+
+.mad-libs-box--place::after {
+	content: 'place';
+}
+
+.mad-libs-box--year::after {
+	content: 'year';
+}
+
+.mad-libs-box--celebrity::after {
+	content: 'celebrity';
+}
+
+.mad-libs-box--food::after {
+	content: 'food';
+}
+
+.mad-libs-box--noun::after {
+	content: 'noun';
+}
+
+.mad-libs-box--ing-verb::after {
+	content: '-ing verb';
+}
+
+.mad-libs-box--adjective::after {
+	content: 'adjective';
+}
+
+.mad-libs-box--plural-noun,
+.mad-libs-box--adjective,
+.mad-libs-box--ing-verb {
+	min-width: 80px;
+}
+
+.mad-libs-box--plural-noun::after {
+	content: 'plural noun';
+}
+
+.mad-libs-box--attendee-name::after {
+	content: 'attendee name';
+}
+
+.mad-libs-box--attendee-name,
+.mad-libs-box--celebrity {
+	min-width: 100px;
+}
+
+.mad-libs-box--verb::after {
+	content: 'verb';
+}
+
+.small-space {
+	display: inline-block;
+	min-width: 2px;
 }
 
 .header-faq {
@@ -709,16 +813,16 @@ a.nav-where-when {
 		margin: 60px 0;
 	}
 	
+	.ad-columns {
+		display: none !important;
+	}
+	
 	.ad-mobile {
 		display: block;
 		width: 100%;
 		max-width: 350px;
 		margin: 0 auto;
 		border: 1px solid #989898;
-	}
-
-	.ad-columns-right {
-		display: none;
 	}
 	
 	.main-container {
