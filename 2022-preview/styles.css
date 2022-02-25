@@ -579,7 +579,7 @@ a.nav-where-when {
 
 .refresh-button-container {
 	height: 50px;
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 .refresh-mad-libs {
@@ -591,7 +591,7 @@ a.nav-where-when {
 	border-bottom: 5px solid #a52491;
 	font-size: 1.1rem;
 	padding: 8px 16px;
-	font-family: 'Comic Sans MS', 'Comic Sans';
+	font-family: 'Bubblegum Sans';
 	cursor: pointer;
 	position: relative;
 	top: 0;
@@ -683,7 +683,7 @@ a.nav-where-when {
 }
 
 .mad-libs-box--verb::after {
-	content: 'verb';
+	content: 'activity';
 }
 
 .small-space {

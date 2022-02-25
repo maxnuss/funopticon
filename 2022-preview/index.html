@@ -7,7 +7,7 @@
     <link rel="icon" href="favicon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-		<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Work+Sans:ital,wght@0,300;0,800;1,400&display=swap&family=Permanent+Marker" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=DM+Sans&family=Work+Sans:ital,wght@0,300;0,800;1,400&display=swap&family=Permanent+Marker&family=Bubblegum+Sans" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
     <link rel="stylesheet" href="styles.css">
@@ -325,23 +325,23 @@ $(document).ready(function(){
 		var organizerImage = organizerImages[Math.floor(Math.random() * organizerImages.length)];
 		$('.organizer-image').attr('src', organizerImage);
 
-		var places = ['Florida', 'Syria', 'chess club', 'Bible Study', 'debtors\' prison', 'the Austro-Hungarian Empire', 'Alex\'s imagination', 'space', 'the woods', 'a hot tub', 'the Library of Alexandria'];
+		var places = ['Florida', 'Syria', 'chess club', 'Bible Study', 'debtors\' prison', 'the Austro-Hungarian Empire', 'Alex\'s imagination', 'space', 'the woods', 'a hot tub', 'the Library of Alexandria', 'Lake Titicaca', 'Mordor', 'the womb', 'Urzopia', 'Match.com'];
 		var place = places[Math.floor(Math.random() * places.length)];
 		$('.mad-libs-box--place').text(place);
 	
-		var years = ['1776', '1984', 'the Year of the Chewable Ambien Tab', '44 BC', '1968', '2001'];
+		var years = ['1776', '1984', 'the Year of the Chewable Ambien Tab', '44 BC', '1968', '2001', '1959 (the year of the day the music died)', 'the hazy future'];
 		var year = years[Math.floor(Math.random() * years.length)];
 		$('.mad-libs-box--year').text(year);
 	
-		var celebrities = ['Martha Stewart', 'Snoop Dogg', 'Gerald Ford', 'Mischa Barton', 'the Situation', 'Alex\'s parents', 'Soulja Boy', 'Suge Knight', 'Lil Dicky', 'Carson Daly', 'Jean-Michael Basquiat', 'Dolly Parton', 'Missy Elliott', 'Dwayne "The Rock" Johnson', 'Whoopi Goldberg'];
+		var celebrities = ['Martha Stewart', 'Snoop Dogg', 'Gerald Ford', 'Mischa Barton', 'the Situation', 'Alex\'s parents', 'Soulja Boy', 'Suge Knight', 'Lil Dicky', 'Carson Daly', 'Jean-Michael Basquiat', 'Dolly Parton', 'Missy Elliott', 'Dwayne "The Rock" Johnson', 'Whoopi Goldberg', 'Mandy Moore', 'Emeril', 'Benito Mussolini', 'Paula Deen'];
 		var celebrity = celebrities[Math.floor(Math.random() * celebrities.length)];
 		$('.mad-libs-box--celebrity').text(celebrity);
 	
-		var foods = ['tinned fish', 'ortolan', 'nothing but air', 'head cheese', 'shark fin soup', '100 McNuggets', 'puffer fish', 'imitation crab', 'beached whale', 'Guy Fieri delicacies', 'pickled alligator', 'shrimp pot pie,', 'edible underwear', 'flavored condoms'];
+		var foods = ['tinned fish', 'ortolan', 'nothing but air', 'head cheese', 'shark fin soup', '100 McNuggets', 'puffer fish', 'imitation crab', 'beached whale', 'Guy Fieri delicacies', 'pickled alligator', 'shrimp pot pie,', 'edible underwear', 'flavored condoms', 'duck-in-a-can', 'tinned razor clams', 'banana pudding', 'spam musubi'];
 		var food = foods[Math.floor(Math.random() * foods.length)];
 		$('.mad-libs-box--food').text(food);
 	
-		var pluralNouns = ['chairs', 'pizzerias', 'wombats', 'earwax removal devices', 'charcuterie boards', 'conspiracy theories', 'LaserDiscs', 'Nativity scenes', 'totalitarian societies', 'propaganda posters', 'Death Cab for Cutie cover bands', 'shovels', 'earthquakes', 'diplomats', 'fight clubs', 'chew toys', 'rules', 'handshakes', 'lip ring', 'poison', 'country clubs', 'printing presses'];
+		var pluralNouns = ['chairs', 'pizzerias', 'wombats', 'earwax removal devices', 'charcuterie boards', 'conspiracy theories', 'LaserDiscs', 'Nativity scenes', 'totalitarian societies', 'propaganda posters', 'Death Cab for Cutie cover bands', 'shovels', 'earthquakes', 'diplomats', 'fight clubs', 'chew toys', 'rules', 'handshakes', 'lip rings', 'poison', 'country clubs', 'printing presses', 'beets', 'stool samples', 'The Ramones','beefsteak tomatoes'];
 		var pluralNoun1 = pluralNouns[Math.floor(Math.random() * pluralNouns.length)];
 		$('.mad-libs-box--plural-noun-1').text(pluralNoun1);
 	
@@ -349,7 +349,7 @@ $(document).ready(function(){
 		var ingVerb = ingVerbs[Math.floor(Math.random() * ingVerbs.length)];
 		$('.mad-libs-box--ing-verb').text(ingVerb);
 	
-		var adjectives = ['mysterious', 'problematic', 'pornographic', 'cubist', 'perplexing', 'overeager', 'dangerous', 'inspirational', 'totalitarian', 'desperate', 'homely', 'old-fashioned', 'wide-eyed', 'colossal', 'mushy', 'tasteless'];
+		var adjectives = ['mysterious', 'problematic', 'pornographic', 'cubist', 'perplexing', 'overeager', 'dangerous', 'inspirational', 'totalitarian', 'desperate', 'homely', 'old-fashioned', 'wide-eyed', 'colossal', 'mushy', 'tasteless', 'titillating', 'repugnant', 'perfumed', 'smelly'];
 		var adjective = adjectives[Math.floor(Math.random() * adjectives.length)];
 		$('.mad-libs-box--adjective').text(adjective);
 	
@@ -360,7 +360,7 @@ $(document).ready(function(){
 		var attendee = attendees[Math.floor(Math.random() * attendees.length)];
 		$('.mad-libs-box--attendee-name').text(attendee);
 	
-		var verbs = ['collapse', 'explode', 'embarrass themselves', 'experience ego death', 'pray', 'perspire', 'equivocate', 'become permanently disfigured', 'go into crushing debt', 'pleasure themselves', 'cry', 'call their mom', 'strip'];
+		var verbs = ['collapse', 'explode', 'embarrass themselves', 'experience ego death', 'pray', 'perspire', 'equivocate', 'become permanently disfigured', 'go into crushing debt', 'pleasure themselves', 'cry', 'call their mom', 'strip', 'self-flagellate', 'compute'];
 		var verb = verbs[Math.floor(Math.random() * verbs.length)];
 		$('.mad-libs-box--verb').text(verb);
 	}
