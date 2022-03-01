@@ -499,7 +499,7 @@ a.nav-where-when {
 .values-grid-value img {
 	display: block;
 	margin: 0 auto;
-	width: 75%;
+	width: 65%;
 	min-height: 100px;
 }
 
@@ -908,4 +908,7 @@ a.nav-where-when {
 	a.nav {
 		margin: 6px 10px;
 	}
+	
+	.values-grid-value h3 {
+		font-size: 1.2rem;
 }
