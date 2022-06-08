@@ -17,6 +17,30 @@
   
   <script>
 		$(document).ready(function(){
+			// check url parameters and hide ads if needed
+			var getUrlParameter = function getUrlParameter(sParam) {
+			var sPageURL = window.location.search.substring(1),
+					sURLVariables = sPageURL.split('&'),
+					sParameterName,
+					i;
+
+			for (i = 0; i < sURLVariables.length; i++) {
+					sParameterName = sURLVariables[i].split('=');
+
+					if (sParameterName[0] === sParam) {
+							return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
+					}
+			}
+			return false;
+	};
+			var noAds = getUrlParameter('no-ads');
+			
+			if (noAds == 'true') {
+				console.log('Ads off');
+				$(document.body).addClass('no-ads');
+			}
+		
+			// ads
 			var random = Math.floor(Math.random() * 2);
 			console.log(random);
 
